@@ -1,6 +1,4 @@
-# Getting Started with Create React App
-
-SYMBIOSIS LAYOUT
+# SYMBIOSIS LAYOUT
 
 ## Available Scripts
 
@@ -27,3 +25,11 @@ See the section about [deployment](https://facebook.github.io/create-react-app/d
 ### `npm run eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+### `npm run stylelint`
+
+For fix styles code or use :check flag for check errors
+
+### `npm run lint`
+
+For fix code lint errors or use :check flag for check errors

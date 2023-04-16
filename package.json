@@ -21,7 +21,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "stylelint": "stylelint **/*.scss --fix",
-    "stylelint:check": "stylelint **/*.scss"
+    "stylelint:check": "stylelint **/*.scss",
+    "lint": "eslint --fix --ext .jsx --ext .js --ext .tsx --ext .ts src",
+    "lint:check": "eslint --ext .jsx --ext .js --ext .tsx --ext .ts src"
   },
   "eslintConfig": {
     "extends": [
@@ -40,5 +42,14 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "^7.18.2",
+    "@babel/preset-react": "^7.17.12",
+    "eslint": "^8.16.0",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-react": "^7.30.0",
+    "prettier": "2.6.2"
   }
 }

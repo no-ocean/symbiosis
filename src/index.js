@@ -9,7 +9,7 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route exact path='/' element={<BattleLanding/>} />
+        <Route exact path='/' element={<BattleLanding />} />
         {/* <Route path='*' element={<PageNotFound />} /> */}
       </Routes>
     </BrowserRouter>

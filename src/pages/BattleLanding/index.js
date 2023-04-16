@@ -1,2 +1,2 @@
-import BattleLanding from "./BattleLanding";
+import BattleLanding from './BattleLanding';
 export default BattleLanding;
