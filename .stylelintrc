@@ -1,0 +1,41 @@
+{
+  "extends": ["stylelint-config-recommended", "stylelint-config-rational-order", "stylelint-config-standard-scss", "stylelint-config-prettier-scss"],
+  "plugins": ["stylelint-order"],
+  "rules": {
+    "no-descending-specificity": null,
+    "declaration-block-no-duplicate-properties": true,
+    "number-max-precision": 8,
+    "color-function-notation": "legacy",
+    "alpha-value-notation": "number",
+    "keyframes-name-pattern": [
+      "^[-a-z0-9]+$",
+      {
+        "message": "Expected keyframe name to be a single word or in a kebab-case"
+      }
+    ],
+    "selector-class-pattern": [
+      "^[-a-zA-Z0-9_]+$",
+      {
+        "message": "Expected class selector to be kebab-case, camelCase or snace_case"
+      }
+    ],
+    "media-feature-name-no-unknown": [
+      true,
+      {
+        "ignoreMediaFeatureNames": [
+          "/^minpixel-/", 
+          "/^min-device-pixel-/", 
+          "/^-webkit/", 
+          "/-webkit-min-device-pixel-ratio/", 
+          "/min--moz-device-pixel-ratio/"
+        ]
+      }
+    ],
+    "selector-pseudo-class-no-unknown": [
+      true,
+      {
+        "ignorePseudoClasses": ["global"]
+      }
+    ]
+  }
+}
