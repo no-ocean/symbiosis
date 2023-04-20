@@ -1,0 +1,48 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.button {
+  color: $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 280px;
+  &:hover {
+    box-shadow: 5px 7px 20px 0px rgba(26, 29, 31, 1);
+  }
+}
+
+.largeRed {
+  background-image: url(../../../public/buttons/btn_lg_fill_red.svg);
+  width: 280px;
+  height: 48px;
+  @include syncopate-font(16px);
+}
+
+.largeBorderRed {
+  background-image: url(../../../public/buttons/btn_lg_transparent_red.svg);
+  width: 280px;
+  height: 48px;
+  @include syncopate-font(16px);
+}
+
+.shortRed {
+  background-image: url(../../../public/buttons/btn_short_fill_red.svg);
+  width: 178px;
+  height: 48px;
+  @include syncopate-font(16px);
+}
+
+.smallBorderRed{
+  background-image: url(../../../public/buttons/btn_sm_transparent_red.svg);
+  width: 208px;
+  height: 40px;
+  @include syncopate-font(12px);
+}
+
+.smallBorderWhite{
+  background-image: url(../../../public/buttons/btn_sm_transparent_white.svg);
+  width: 208px;
+  height: 40px;
+  @include syncopate-font(12px);
+}

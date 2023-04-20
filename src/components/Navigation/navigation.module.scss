@@ -1,0 +1,44 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.nav {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.navList {
+  @include syncopate-font(16px);
+
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+}
+
+.navItem {
+  display: flex;
+  margin-left: 62px;
+}
+
+.navLink, .socialLink {
+  transition: color .2s ease;
+  &:hover {
+    color: $red;
+  }
+}
+
+.socialList {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.socialItem {
+  display: flex;
+}
+
+.socialLink {
+  display: flex;
+  font-size: 24px;
+  margin: 0 10px;
+}

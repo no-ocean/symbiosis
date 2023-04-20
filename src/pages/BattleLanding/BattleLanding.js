@@ -1,7 +1,12 @@
 import React from 'react';
+import Header from '../../components/Header/Header';
 
 const BattleLanding = () => {
-  return <h1>Battle Landing Page</h1>;
+  return (
+    <div>
+      <Header />
+    </div>
+  );
 };
 
 export default BattleLanding;

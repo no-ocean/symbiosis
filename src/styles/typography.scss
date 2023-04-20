@@ -1,22 +1,30 @@
+@import 'https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Work+Sans:wght@400;500;600;700&display=swap';
+
+// font-family: 'Syncopate', sans-serif;
+// font-family: 'Work Sans', sans-serif;
+
 html {
-	font-size: 62.5%;
-	font-family: $main-font;
+	font-size: 16px;
 }
 
 body {
 	color: $text-light;
-	font-size: 1.2rem;
 	line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: Syncopate, sans-serif;
+	text-transform: uppercase;
 }
 
 h1 {
 	color: $text-light;
-	font-size: 2.3rem;
-	line-height: 1.3;
+	line-height: 1.5;
+	@include syncopate-font(70px);
 }
 
 h2 {
 	color: $text-light;
-	font-size: 2rem;
-	line-height: 1.2;
+	line-height: 1;
+	@include syncopate-font(40px);
 }
