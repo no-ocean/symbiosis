@@ -3,3 +3,32 @@
   font-family: Syncopate, sans-serif;
   text-transform: uppercase;
 }
+
+@mixin text-ellipsis {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+@mixin button-hover-animation {
+  &:before {
+    background: $white;
+    content: "";
+    height: 180px;
+    left: 0;
+    opacity: .2;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
+  }
+
+  &:hover {
+    &:before {
+      animation-iteration-count: 1;
+      animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+      animation: opacityIn 550ms;
+      animation-fill-mode: forwards;
+      animation-direction: alternate;
+    }
+  }
+}

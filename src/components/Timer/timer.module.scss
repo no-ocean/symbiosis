@@ -1,0 +1,104 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.wrapper {
+  background-image: url(../../../public/timer/timer_desc.svg);
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 545px;
+  margin: 18px -10px 0 auto; 
+  padding: 58px 66px 96px 50px;
+  position: relative;
+}
+
+.title {
+  background-image: url(../../../public/timer/header.svg);
+  position: absolute;
+  height: 36px;
+  width: 229px;
+  left: 50px;
+  top: -18px;
+  z-index: 5;
+
+  padding: 8px 28px 8px 8px;
+  text-align: center;
+  color: $text-light;
+  @include syncopate-font(16px);
+  @include text-ellipsis;
+}
+
+.statusText {
+  display: block;
+  flex-shrink: 0;
+  margin-bottom: 20px;
+  font-size: 20px;
+  line-height: 22px;
+  width: 100%;
+  @include text-ellipsis;
+}
+
+.timer {
+  display: flex;
+  flex-direction: column;
+}
+
+.timerValue {
+  @include syncopate-font(60px);
+  line-height: 1;
+}
+
+.subtext {
+  color: $text-gray;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.topBlock {
+  display: flex;
+  flex-direction: column;
+  height: 176px;
+  border-bottom: 1px solid $text-gray;
+  padding-bottom: 55px;
+  margin-bottom: 40px;
+  width: 100%;
+}
+
+.table {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  flex-grow: 1;
+  margin-top: 10px;
+}
+
+.row {
+  display: flex;
+  margin-bottom: auto;
+  align-items: baseline;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.col1 {
+  font-size: 22px;
+  font-weight: 500;
+  flex-grow: 1;
+  line-height: 27px;
+  @include text-ellipsis;
+}
+
+.col2 {
+  @include syncopate-font(20px);
+  line-height: 21px;
+  flex-shrink: 0;
+  width: 170px;
+  text-align: end;
+  white-space: nowrap;
+}
+
+.completed {
+  color: $text-gray;
+}

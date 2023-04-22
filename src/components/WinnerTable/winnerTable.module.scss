@@ -1,0 +1,60 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.winners {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.position {
+  display: flex;
+  width: 29px;
+  height: 29px;
+  margin-right: 10px;
+  flex-shrink: 0;
+  img {
+    width: 100%;
+  }
+}
+
+.title {
+  font-size: 20px;
+  line-height: 23px;
+  margin-right: auto;
+  @include text-ellipsis;
+}
+
+.value {
+  line-height: 24px;
+  margin-right: 14px;
+  flex-shrink: 0;
+  width: 70px;
+  @include syncopate-font(14px);
+  @include text-ellipsis;
+}
+
+.score {
+  text-align: right;
+  line-height: 24px;
+  color: $text-green;
+  flex-shrink: 0;
+  width: 90px;
+  @include syncopate-font(14px);
+  @include text-ellipsis;
+}

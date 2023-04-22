@@ -5,6 +5,7 @@
 
 html {
 	font-size: 16px;
+	font-family: 'Work Sans', sans-serif;
 }
 
 body {
@@ -15,16 +16,22 @@ body {
 h1, h2, h3, h4, h5, h6 {
 	font-family: Syncopate, sans-serif;
 	text-transform: uppercase;
+	line-height: 1.2;
 }
 
 h1 {
 	color: $text-light;
-	line-height: 1.5;
 	@include syncopate-font(70px);
 }
 
 h2 {
 	color: $text-light;
-	line-height: 1;
 	@include syncopate-font(40px);
+	margin: 20px 0 40px;
+}
+
+h3 {
+	font-size: 20px;
+	line-height: 21px;
+	margin: 0 0 20px;
 }

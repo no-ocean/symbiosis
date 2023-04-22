@@ -17,7 +17,7 @@ const Button = ({ label, view = 'largeRed', type, className, onClick, to }) => {
       target='_blank'
       rel='noreferrer'
     >
-      {label}
+      <span className={styles.label}>{label}</span>
     </a>
   ) : (
     <button
@@ -26,7 +26,7 @@ const Button = ({ label, view = 'largeRed', type, className, onClick, to }) => {
         className ? className : ''
       }`}
     >
-      {label}
+      <span className={styles.label}>{label}</span>
     </button>
   );
 };
