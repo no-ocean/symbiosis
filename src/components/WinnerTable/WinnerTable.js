@@ -25,7 +25,7 @@ const winnerData = [
 const WinnerTable = () => {
   return (
     <div className={styles.winners}>
-      <h3>Winners</h3>
+      <h4>Winners</h4>
       <div className={styles.wrapper}>
         {winnerData
           .sort((a, b) => a.position - b.position)

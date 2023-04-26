@@ -9,7 +9,7 @@ const TopSection = () => {
         <div className='row'>
           <div className='col-md-7'>
             <div className={styles.logo}>
-              <img src='/page-logo/logo.png' alt='logo' />
+              <img src='/page/logo@2x.png' alt='logo' />
             </div>
             <h2>
               Symbiosis <br /> Portfolio Battle
@@ -19,6 +19,38 @@ const TopSection = () => {
               view='largeRed'
               label='Connect Wallet'
             />
+            <div className={styles.items}>
+              <div className={styles.item}>
+                <div className={styles.itemImg}>
+                  <img src='/page/prize_fund_item@2x.png' alt='prize fund' />
+                </div>
+                <p className={styles.itemValue}>$ 2000</p>
+                <span className={styles.itemDesc}>Prize fund</span>
+              </div>
+              <div className={styles.item}>
+                <div className={styles.itemImg}>
+                  <img
+                    src='/page/raytaians_item@2x.png'
+                    alt='number of raytaians'
+                  />
+                </div>
+                <p className={styles.itemValue}>1053</p>
+                <span className={styles.itemDesc}>Number of raytaians</span>
+              </div>
+
+              {false && (
+                <div className={styles.item}>
+                  <div className={styles.itemImg}>
+                    <img
+                      src='/page/raytaians_with_nft_item@2x.png'
+                      alt='raytaians with nft'
+                    />
+                  </div>
+                  <p className={styles.itemValue}>593</p>
+                  <span className={styles.itemDesc}>Raytaians with NFT</span>
+                </div>
+              )}
+            </div>
           </div>
           <div className='col-md-5'>
             <TimerBlock />

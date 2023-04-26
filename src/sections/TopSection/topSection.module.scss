@@ -1,3 +1,6 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
 .topSection {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -11,3 +14,35 @@
   margin-bottom: 20px;
 }
 
+
+.items {
+  display: flex;
+  padding-top: 70px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+  max-width: 200px;
+  margin-bottom: 20px;
+}
+
+.itemImg {
+  height: 42px;
+  margin-bottom: 20px;
+  img {
+    height: 100%;
+  }
+}
+
+.itemValue {
+  @include syncopate-font(30px);
+  line-height: 31px;
+  margin-bottom: 10px;
+}
+
+.itemDesc {
+  font-size: 20px;
+  line-height: 23px;
+}

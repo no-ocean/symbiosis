@@ -12,7 +12,7 @@ const Header = () => {
           <Logo />
           <Navigation />
           <Button
-            to='https://learn.javascript.ru'
+            to='https://google.com'
             className={styles.button}
             type='link'
             view='smallBorderRed'
