@@ -58,47 +58,14 @@
 }
 
 
-a.link {
-  color: $red-light;
-  display: flex;
-  align-items: center;
-  line-height: 19px;
-  margin-bottom: 6px;
-  position: relative;
-  max-width: max-content;
+.link {
   
   &:last-child {
     margin-bottom: 0;
   }
-  span {
-    position: relative;
-    padding-bottom: 6px;
-    &::before {
-      content: '';
-      background-color: $red-light;
-      position: absolute;
-      bottom: 0;
-      left: 50%;
-      width: 0;
-      height: 1px;
-      transition: all .5s ease;
-      transform: translateX(-50%);
-    }
-  }
-  &:hover {
-    span {
-      &::before {
-        width: 100%;
-      }
-    }
-  }
 }
 
-.arrow {
-  font-size: 24px;
-  margin-right: 6px;
-  margin-bottom: 6px;
-}
+
 
 .note {
   padding-top: 30px;

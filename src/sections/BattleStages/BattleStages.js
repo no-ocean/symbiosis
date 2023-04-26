@@ -1,6 +1,6 @@
 import React from 'react';
-import { FiArrowUpRight } from 'react-icons/fi';
 import Button from '../../components/Button/Button';
+import SimpleLink from '../../components/SimpleLink';
 import styles from './battleStages.module.scss';
 
 const BattleStages = () => {
@@ -24,14 +24,16 @@ const BattleStages = () => {
                   </span>
                 </div>
                 <div className={`col-lg-6 ${styles.column}`}>
-                  <a href='' target='_blank' className={styles.link}>
-                    <FiArrowUpRight className={styles.arrow} />
-                    <span>How to create wallet</span>
-                  </a>
-                  <a href='' target='_blank' className={styles.link}>
-                    <FiArrowUpRight className={styles.arrow} />
-                    <span>How to link your wallet</span>
-                  </a>
+                  <SimpleLink
+                    to='https://google.com'
+                    label='How to create wallet'
+                    className={styles.link}
+                  />
+                  <SimpleLink
+                    to='https://google.com'
+                    label='How to link your wallet'
+                    className={styles.link}
+                  />
                 </div>
               </div>
             </div>
