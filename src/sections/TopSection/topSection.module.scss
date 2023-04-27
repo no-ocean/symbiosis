@@ -2,8 +2,10 @@
 @import "../../styles/variables";
 
 .topSection {
+  background-image: url(../../../public/backgrounds/top_section_dark_bg.png);
+  background-position: 50% 44px;
   padding-top: 60px;
-  padding-bottom: 60px;
+  padding-bottom: 208px;
 }
 
 .logo {

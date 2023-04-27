@@ -27,12 +27,10 @@ const BattleStages = () => {
                   <SimpleLink
                     to='https://google.com'
                     label='How to create wallet'
-                    className={styles.link}
                   />
                   <SimpleLink
                     to='https://google.com'
                     label='How to link your wallet'
-                    className={styles.link}
                   />
                 </div>
               </div>

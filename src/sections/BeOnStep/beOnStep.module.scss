@@ -3,9 +3,12 @@
 
 .wrapper {
   padding-top: 80px;
+  padding-bottom: 180px;
 }
 
 .container {
+  background-image: url(../../../public/backgrounds/be_on_step_bg_dark.png);
+  background-position: 100% 100%;
   max-width: 1434px;
   margin: 0 auto;
   position: relative;
@@ -16,10 +19,37 @@
   max-width: 590px;
   top: -150px;
   left: 0;
+  z-index: 10;
 }
 
 .content {
-  padding-left: 634px;
+  background-image: url(../../../public/backgrounds/be_on_step_bg.png);                
+  background-position: 100% 65px;
+  padding: 152px 0 120px 634px;
+  max-width: 1304px;
+  position: relative;
+  &:before {
+    content: '';
+    background-image: url(../../../public/backgrounds/be_on_step_before.png);
+    position: absolute;
+    width: 142px;
+    height: 23px;
+    top: 68px;
+    right: 14%;
+  }
+  &:after {
+    content: '';
+    background-image: url(../../../public/backgrounds/be_on_step_after.png);
+    position: absolute;
+    width: 7px;
+    height: 169px;
+    top: 312px;
+    right: -4px;
+  }
+}
+
+.inner {
+  max-width: 580px;
 }
 
 .title {
@@ -32,4 +62,42 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 21px;
+  margin-bottom: 0;
+}
+
+.items {
+  display: flex;
+  padding-top: 92px;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+  max-width: 270px;
+  margin-bottom: 20px;
+  margin-right: 52px;
+}
+
+.icon {
+  height: 42px;
+  margin-bottom: 10px;
+  img {
+    height: 100%;
+  }
+}
+
+.text {
+  font-size: 16px;
+  line-height: 19px;
+}
+
+.buttons {
+  padding-top: 60px;
+  display: flex;
+  align-items: center;
+}
+
+.button {
+  margin-right: 36px;
 }

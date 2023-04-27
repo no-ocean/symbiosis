@@ -16,10 +16,14 @@ a.wrapper {
       }
     }
   }
+  &:last-child {
+    margin-bottom: 0;
+  }
 }  
   
 .label {
   position: relative;
+  padding-top: 6px;
   padding-bottom: 6px;
   &::before {
     content: '';
@@ -37,5 +41,4 @@ a.wrapper {
 .icon {
   font-size: 24px;
   margin-right: 6px;
-  margin-bottom: 6px;
 }
