@@ -1,7 +1,7 @@
 {
   "name": "symbiosis",
   "version": "0.1.0",
-  "homepage": "https://no-ocean.github.io/battle",
+  "homepage": "https://no-ocean.github.io/symbiosis",
   "private": true,
   "dependencies": {
     "react": "^18.2.0",
