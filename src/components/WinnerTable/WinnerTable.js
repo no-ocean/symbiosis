@@ -34,11 +34,11 @@ const WinnerTable = () => {
               <div key={item.position + item.title} className={styles.row}>
                 <div className={styles.position}>
                   {item.position === 1 ? (
-                    <img src='/winners/1@2x.png' alt='1' />
+                    <img src='./winners/1@2x.png' alt='1' />
                   ) : item.position === 2 ? (
-                    <img src='/winners/2@2x.png' alt='2' />
+                    <img src='./winners/2@2x.png' alt='2' />
                   ) : (
-                    <img src='/winners/3@2x.png' alt='3' />
+                    <img src='./winners/3@2x.png' alt='3' />
                   )}
                 </div>
                 <div className={styles.title}>{item.title}</div>

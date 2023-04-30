@@ -8,7 +8,7 @@ const BeOnStep = () => {
     <div className={styles.wrapper}>
       <div className={styles.container}>
         <div className={styles.img}>
-          <img src='/images/be_on_step_img@2x.png' alt='' />
+          <img src='./images/be_on_step_img@2x.png' alt='' />
         </div>
         <div className={styles.content}>
           <div className={styles.inner}>
@@ -19,7 +19,7 @@ const BeOnStep = () => {
             <div className={styles.items}>
               <div className={styles.item}>
                 <div className={styles.icon}>
-                  <img src='/page/profit_item@2x.png' alt='profit' />
+                  <img src='./page/profit_item@2x.png' alt='profit' />
                 </div>
                 <p className={styles.text}>
                   +1% to the portfolio profit as a gift
@@ -27,7 +27,7 @@ const BeOnStep = () => {
               </div>
               <div className={styles.item}>
                 <div className={styles.icon}>
-                  <img src='/page/stats_item@2x.png' alt='access' />
+                  <img src='./page/stats_item@2x.png' alt='access' />
                 </div>
                 <p className={styles.text}>Access to battle stats</p>
               </div>

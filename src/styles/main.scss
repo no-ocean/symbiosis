@@ -28,6 +28,9 @@ a {
         color: inherit;
         text-decoration: none;
     }
+    &:-webkit-any-link {
+        color: inherit;
+    }
 }
 
 p {

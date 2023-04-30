@@ -20,7 +20,7 @@ const AboutSection = () => {
           <div className={styles.left}>
             <div className={styles.subtitleRow}>
               <div className={styles.logo}>
-                <img src='/page/logo@2x.png' alt='logo' />
+                <img src='./page/logo@2x.png' alt='logo' />
               </div>
               <h3 className={styles.subtitle}>Symbiosis</h3>
             </div>

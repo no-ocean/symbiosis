@@ -12,7 +12,7 @@ const BattleStages = () => {
           {/* item-01 */}
           <div className={styles.item}>
             <div className={styles.num}>
-              <img src='/page/item_01@2x.png' alt='1' />
+              <img src='./page/item_01@2x.png' alt='1' />
             </div>
             <div className={styles.content}>
               <h4 className={styles.itemTitle}>Registration</h4>
@@ -39,7 +39,7 @@ const BattleStages = () => {
           {/* item-02 */}
           <div className={styles.item}>
             <div className={styles.num}>
-              <img src='/page/item_02@2x.png' alt='2' />
+              <img src='./page/item_02@2x.png' alt='2' />
             </div>
             <div className={styles.content}>
               <h4 className={styles.itemTitle}>Creating a Portfolio</h4>
@@ -62,7 +62,7 @@ const BattleStages = () => {
           {/* item-03 */}
           <div className={styles.item}>
             <div className={styles.num}>
-              <img src='/page/item_03@2x.png' alt='3' />
+              <img src='./page/item_03@2x.png' alt='3' />
             </div>
             <div className={styles.content}>
               <h4 className={styles.itemTitle}>Battle Start</h4>
@@ -85,7 +85,7 @@ const BattleStages = () => {
           {/* item-04 */}
           <div className={styles.item}>
             <div className={styles.num}>
-              <img src='/page/item_04@2x.png' alt='4' />
+              <img src='./page/item_04@2x.png' alt='4' />
             </div>
             <div className={styles.content}>
               <h4 className={styles.itemTitle}>Final Battle</h4>
