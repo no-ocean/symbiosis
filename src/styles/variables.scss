@@ -1,5 +1,5 @@
-$white: #FFF;
-$black: #000;
+$white: #FFFFFF;
+$black: #000000;
 $red: #A10B0B;
 $red-light: #E33A3A;
 $green: #36BF65;
@@ -9,3 +9,16 @@ $text-gray : #80828B;
 $text-green: $green;
 
 $header-bg: #1B2126;
+
+// grid
+$gutter-width: 30px;
+$half-gutter-width: 15px;
+$sm-max: 540px;
+$md-max: 720px;
+$lg-max: 960px;
+$xl-max: 1290px;
+$xs-breakpoint: 0;
+$sm-breakpoint: 576px;
+$md-breakpoint: 768px;
+$lg-breakpoint: 992px;
+$xl-breakpoint: 1360px;

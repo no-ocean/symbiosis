@@ -6,8 +6,8 @@ const TopSection = () => {
   return (
     <div className={styles.topSection}>
       <div className='container-fluid'>
-        <div className='row'>
-          <div className='col-md-7'>
+        <div className={styles.inner}>
+          <div className={styles.left}>
             <div className={styles.logo}>
               <img src='/page/logo@2x.png' alt='logo' />
             </div>
@@ -38,7 +38,7 @@ const TopSection = () => {
                 <span className={styles.itemDesc}>Number of raytaians</span>
               </div>
 
-              {false && (
+              {true && (
                 <div className={styles.item}>
                   <div className={styles.itemImg}>
                     <img
@@ -52,7 +52,7 @@ const TopSection = () => {
               )}
             </div>
           </div>
-          <div className='col-md-5'>
+          <div className={styles.right}>
             <TimerBlock />
           </div>
         </div>

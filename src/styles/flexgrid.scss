@@ -1,16 +1,16 @@
 @use "sass:math";
 
-$gutter-width: 30px;
-$half-gutter-width: 15px;
-$sm-max: 540px;
-$md-max: 720px;
-$lg-max: 980px;
-$xl-max: 1290px;
-$xs-breakpoint: 0;
-$sm-breakpoint: 576px;
-$md-breakpoint: 768px;
-$lg-breakpoint: 992px;
-$xl-breakpoint: 1360px;
+// gutter-width: 30px;
+// half-gutter-width: 15px;
+// sm-max: 540px;
+// md-max: 720px;
+// lg-max: 980px;
+// xl-max: 1290px;
+// xs-breakpoint: 0;
+// sm-breakpoint: 576px;
+// md-breakpoint: 768px;
+// lg-breakpoint: 992px;
+// xl-breakpoint: 1360px;
 
 @import './variables';
 
@@ -27,20 +27,18 @@ $xl-breakpoint: 1360px;
 }
 
 .container-fluid {
+  box-sizing: border-box;
   padding-right: $half-gutter-width;
   padding-left: $half-gutter-width;
+  max-width: $xl-max;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
 }
 
 @media only screen and (min-width: $sm-breakpoint) {
   .container {
     max-width: $sm-max;
-  }
-
-  .container-fluid {
-    box-sizing: border-box;
-    width: 100%;
-    margin-right: auto;
-    margin-left: auto;
   }
 }
 @media only screen and (min-width: $md-breakpoint) {
@@ -54,7 +52,7 @@ $xl-breakpoint: 1360px;
   }
 }
 @media only screen and (min-width: $xl-breakpoint) {
-  .container, .container-fluid {
+  .container {
     max-width: $xl-max;
   }
 }

@@ -14,7 +14,7 @@
 }
 
 .title {
-  padding-left: 124px;
+  padding-left: 112px;
   margin-top: 0;
   margin-bottom: 60px;
 }
@@ -82,5 +82,115 @@
   button {
     margin-bottom: 12px;
     margin-right: 32px;
+  }
+}
+
+
+// sm-breakpoint: 576px;
+// md-breakpoint: 768px;
+// lg-breakpoint: 992px;
+// xl-breakpoint: 1360px;
+@media (max-width: $xl-breakpoint) {
+  .line {
+    background-position: 20px 90px;
+  }
+
+  .main {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .wrapper {
+    padding-bottom: 90px;
+  }
+}
+
+@media (max-width: $lg-max) {
+  .wrapper {
+    padding-top: 0;
+    padding-bottom: 60px;
+  }
+
+  .main {
+    padding: 0;
+  }
+
+  .title {
+    padding-left: 92px;
+  }
+
+  .line {
+    background-image: none;
+  }
+
+  .item {
+    margin-bottom: 50px;
+    &:nth-child(2) {
+      margin-bottom: 50px;
+    }
+    &:nth-child(3) {
+      margin-bottom: 50px;
+    }
+    &:nth-child(4) {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+@media (max-width: $md-breakpoint) {
+
+  .title {
+    padding-left: 0;
+  }
+
+  .column {
+    margin-bottom: 30px;
+    &:last-child {
+      max-width: 100%;
+      margin-bottom: 0;
+    }
+  }
+
+  .list {
+    list-style: inside;
+  }
+
+  .itemTitle {
+    margin-bottom: 30px;
+  }
+
+  .buttons {
+    padding-left: 0;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    button {
+      margin-bottom: 20px;
+      margin-right: 0;
+    }
+  }
+}
+
+@media (max-width: $sm-breakpoint) {
+
+  .title {
+    padding-left: 0;
+  }
+
+  .main {
+    padding: 0;
+  }
+
+  .num {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .itemTitle {
+    font-size: 18px;
+  }
+
+  .item {
+    flex-direction: column;
   }
 }

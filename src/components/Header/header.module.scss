@@ -10,6 +10,16 @@
   align-items: center;
 }
 
+.menuBtn {
+  margin-left: auto;
+}
+
 .button {
   margin-left: 150px;
+}
+
+@media (max-width: $lg-max) {
+  .header {
+    padding: 12px 0;;
+  }
 }

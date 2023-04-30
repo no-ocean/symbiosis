@@ -6,7 +6,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 280px;
+  width: 280px;
+  flex-shrink: 0;
   background-size: contain;
   position: relative;
   padding-left: 12px;

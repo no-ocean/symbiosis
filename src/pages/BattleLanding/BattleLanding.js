@@ -7,7 +7,7 @@ import BeOnStep from '../../sections/BeOnStep/BeOnStep';
 
 const BattleLanding = () => {
   return (
-    <div>
+    <>
       <Header />
 
       <TopSection />
@@ -17,7 +17,7 @@ const BattleLanding = () => {
       <BattleStages />
 
       <BeOnStep />
-    </div>
+    </>
   );
 };
 

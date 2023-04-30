@@ -17,13 +17,13 @@ const BattleStages = () => {
             <div className={styles.content}>
               <h4 className={styles.itemTitle}>Registration</h4>
               <div className='row'>
-                <div className={`col-lg-6 ${styles.column}`}>
+                <div className={`col-lg-6 col-md-6 ${styles.column}`}>
                   <span>Link a Wallet</span>
                   <span className={styles.note}>
                     * You dont need real money
                   </span>
                 </div>
-                <div className={`col-lg-6 ${styles.column}`}>
+                <div className={`col-lg-6 col-md-6 ${styles.column}`}>
                   <SimpleLink
                     to='https://google.com'
                     label='How to create wallet'
@@ -44,13 +44,13 @@ const BattleStages = () => {
             <div className={styles.content}>
               <h4 className={styles.itemTitle}>Creating a Portfolio</h4>
               <div className='row'>
-                <div className={`col-lg-6 ${styles.column}`}>
+                <div className={`col-lg-6 col-md-6 ${styles.column}`}>
                   <ul className={styles.list}>
                     <li>Think of a name for your portfolio</li>
                     <li>Choose the assets you like</li>
                   </ul>
                 </div>
-                <div className={`col-lg-6 ${styles.column}`}>
+                <div className={`col-lg-6 col-md-6 ${styles.column}`}>
                   <span>
                     *All portfolio changes are only available before the battle
                     begins
@@ -67,13 +67,13 @@ const BattleStages = () => {
             <div className={styles.content}>
               <h4 className={styles.itemTitle}>Battle Start</h4>
               <div className='row'>
-                <div className={`col-lg-6 ${styles.column}`}>
+                <div className={`col-lg-6 col-md-6 ${styles.column}`}>
                   <p>
                     The portfolio is fixed and the countdown to the finals
                     begins
                   </p>
                 </div>
-                <div className={`col-lg-6 ${styles.column}`}>
+                <div className={`col-lg-6 col-md-6 ${styles.column}`}>
                   <p>
                     You can follow the progress of the battle on the website.
                     Profit amount is updated automatically.
@@ -90,13 +90,13 @@ const BattleStages = () => {
             <div className={styles.content}>
               <h4 className={styles.itemTitle}>Final Battle</h4>
               <div className='row'>
-                <div className={`col-lg-6 ${styles.column}`}>
+                <div className={`col-lg-6 col-md-6 ${styles.column}`}>
                   <p>
                     After the end of the battle, the PNLs of all portfolios are
                     registered and the list of winners is determined.
                   </p>
                 </div>
-                <div className={`col-lg-6 ${styles.column}`}>
+                <div className={`col-lg-6 col-md-6 ${styles.column}`}>
                   <p>
                     The amount of winnings is automatically credited to the
                     winner`s wallet.

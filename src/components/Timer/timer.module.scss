@@ -26,6 +26,10 @@
   color: $text-light;
   @include syncopate-font(16px);
   @include text-ellipsis;
+
+  &.finished {
+    filter: grayscale(1);
+  }
 }
 
 .statusText {
@@ -101,4 +105,89 @@
 
 .completed {
   color: $text-gray;
+}
+
+
+@media (max-width: $lg-max) {
+  .wrapper {
+    background-image: none;
+    border: 2px solid $red;
+    border-radius: 12px;
+    margin: 48px auto 0; 
+    position: relative;
+    width: 100%;
+    &::before {
+      content: '';
+      background-image: url(../../../public/timer/before_mobile.png);
+      height: 110px;
+      width: 12px;
+      position: absolute;
+      top: 60%;
+      right: -12px;
+    }
+    &::after {
+      content: '';
+      background-image: url(../../../public/timer/after_mobile.png);
+      width: 110px;
+      height: 12px;
+      position: absolute;
+      bottom: 0;
+      right: 15%;
+    }
+  }
+}
+
+@media (max-width: $sm-breakpoint) {
+  .wrapper {
+    background-size: contain;
+    width: 100%;
+    padding: 34px 22px 38px 18px;
+    height: 328px;
+    &:after {
+      bottom: -12px;
+      right: 56%;
+      transform: rotate(180deg);
+    }
+  }
+
+  .title {
+    font-size: 10px;
+    line-height: 10px;
+    background-size: contain;
+    width: 150px;
+    height: 30px;
+    padding: 8px 18px 0 8px;
+    top: -12px;
+    left: 24px;
+  }
+
+  .statusText {
+    font-size: 14px;
+  }
+
+  .timerValue {
+    font-size: 42px;
+  }
+
+  .subtext {
+    font-size: 12px;
+    line-height: 14px;
+  }
+
+  .col1 {
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  .col2 {
+    font-size: 14px;
+    line-height: 15px;
+    width: 124px;
+  }
+
+  .topBlock {
+    height: auto;
+    padding-bottom: 27px;
+    margin-bottom: 20px;
+  }
 }

@@ -6,9 +6,12 @@ import {
   BsTelegram,
   BsTwitter,
 } from 'react-icons/bs';
+import { useMediaQuery } from 'react-responsive';
 import styles from './aboutSection.module.scss';
 
 const AboutSection = () => {
+  const isTablet = useMediaQuery({ maxDeviceWidth: 960 });
+
   return (
     <div className={styles.wrapper}>
       <div className='container-fluid'>
@@ -53,7 +56,14 @@ const AboutSection = () => {
             </div>
           </div>
           <div className={styles.image}>
-            <img src='/images/about_partners_img@2x.png' alt='' />
+            <img
+              src={`${
+                isTablet
+                  ? '/images/about_partners_img_mobile@2x.png'
+                  : '/images/about_partners_img@2x.png'
+              }`}
+              alt=''
+            />
           </div>
         </div>
       </div>
