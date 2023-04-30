@@ -59,8 +59,8 @@ const AboutSection = () => {
             <img
               src={`${
                 isTablet
-                  ? '/images/about_partners_img_mobile@2x.png'
-                  : '/images/about_partners_img@2x.png'
+                  ? './images/about_partners_img_mobile@2x.png'
+                  : './images/about_partners_img@2x.png'
               }`}
               alt=''
             />
