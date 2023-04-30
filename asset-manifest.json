@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/symbiosis/static/css/main.ecbfb63e.css",
-    "main.js": "/symbiosis/static/js/main.ed628e5a.js",
+    "main.js": "/symbiosis/static/js/main.c76b4bca.js",
     "static/media/battle_stages_dark_bg.png": "/symbiosis/static/media/battle_stages_dark_bg.d9c10ddb697cdd0db199.png",
     "static/media/about_the_partner_bg.png": "/symbiosis/static/media/about_the_partner_bg.05a7941770935a5044a5.png",
     "static/media/be_on_step_bg.png": "/symbiosis/static/media/be_on_step_bg.b4050eb4750db1e51548.png",
@@ -15,10 +15,10 @@
     "static/media/btn_sm_transparent_white.svg": "/symbiosis/static/media/btn_sm_transparent_white.82d9c237b80ab9b83048.svg",
     "static/media/btn_lg_fill_red.svg": "/symbiosis/static/media/btn_lg_fill_red.bb46cc7c5d6638de3bf4.svg",
     "main.ecbfb63e.css.map": "/symbiosis/static/css/main.ecbfb63e.css.map",
-    "main.ed628e5a.js.map": "/symbiosis/static/js/main.ed628e5a.js.map"
+    "main.c76b4bca.js.map": "/symbiosis/static/js/main.c76b4bca.js.map"
   },
   "entrypoints": [
     "static/css/main.ecbfb63e.css",
-    "static/js/main.ed628e5a.js"
+    "static/js/main.c76b4bca.js"
   ]
 }
