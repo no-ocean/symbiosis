@@ -2,6 +2,7 @@
   "name": "symbiosis",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://no-ocean.github.io/symbiosis/",
   "dependencies": {
     "@mobx-devtools/tools": "^0.0.4",
     "mobx": "^6.9.0",

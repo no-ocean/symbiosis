@@ -1,17 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import './styles/index.scss';
 import BattleLanding from './pages/BattleLanding';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route exact path='/' element={<BattleLanding />} />
         {/* <Route path='*' element={<PageNotFound />} /> */}
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>
 );
