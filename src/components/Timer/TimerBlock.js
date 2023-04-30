@@ -12,7 +12,9 @@ const TimerBlock = () => {
   const { completed } = timerBlockData;
   return (
     <div className={styles.wrapper}>
-      <div className={`${styles.title} ${styles.finished}`}>Registration</div>
+      <div className={`${styles.title} ${completed && styles.finished}`}>
+        Registration
+      </div>
 
       <div className={styles.topBlock}>
         {completed ? <ScheduleTable /> : <Timer />}
