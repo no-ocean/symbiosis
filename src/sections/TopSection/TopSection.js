@@ -38,7 +38,7 @@ const TopSection = () => {
                 <span className={styles.itemDesc}>Number of raytaians</span>
               </div>
 
-              {true && (
+              {false && (
                 <div className={styles.item}>
                   <div className={styles.itemImg}>
                     <img
