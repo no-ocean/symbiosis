@@ -20,6 +20,9 @@
 
 @media (max-width: $lg-max) {
   .header {
-    padding: 12px 0;;
+    padding: 12px 0;
+    position: sticky;
+    top: 0;
+    z-index: 25;
   }
 }
