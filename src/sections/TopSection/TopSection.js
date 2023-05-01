@@ -17,7 +17,7 @@ const TopSection = () => {
             <Button
               className={styles.button}
               view='largeRed'
-              label='Connect Wallet'
+              label='Create Portfolio'
             />
             <div className={styles.items}>
               <div className={styles.item}>
