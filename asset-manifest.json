@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/symbiosis/static/css/main.ecbfb63e.css",
+    "main.css": "/symbiosis/static/css/main.690f3c70.css",
     "main.js": "/symbiosis/static/js/main.c76b4bca.js",
     "static/media/battle_stages_dark_bg.png": "/symbiosis/static/media/battle_stages_dark_bg.d9c10ddb697cdd0db199.png",
     "static/media/about_the_partner_bg.png": "/symbiosis/static/media/about_the_partner_bg.05a7941770935a5044a5.png",
@@ -14,11 +14,11 @@
     "static/media/btn_lg_transparent_red.svg": "/symbiosis/static/media/btn_lg_transparent_red.d2055d4283cd07c09a20.svg",
     "static/media/btn_sm_transparent_white.svg": "/symbiosis/static/media/btn_sm_transparent_white.82d9c237b80ab9b83048.svg",
     "static/media/btn_lg_fill_red.svg": "/symbiosis/static/media/btn_lg_fill_red.bb46cc7c5d6638de3bf4.svg",
-    "main.ecbfb63e.css.map": "/symbiosis/static/css/main.ecbfb63e.css.map",
+    "main.690f3c70.css.map": "/symbiosis/static/css/main.690f3c70.css.map",
     "main.c76b4bca.js.map": "/symbiosis/static/js/main.c76b4bca.js.map"
   },
   "entrypoints": [
-    "static/css/main.ecbfb63e.css",
+    "static/css/main.690f3c70.css",
     "static/js/main.c76b4bca.js"
   ]
 }
