@@ -1,0 +1,26 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.backLink {
+  display: flex;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 700;
+  align-items: center;
+  transition: all .2s ease;
+  opacity: .7;
+  width: max-content;
+  svg {
+    transition: all .2s ease;
+    font-size: 34px;
+  }
+
+  &:hover {
+   opacity: 1;
+  }
+}
+
+.label {
+  margin-left: 20px;
+  transition: all .2s ease;
+}

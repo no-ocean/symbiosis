@@ -1,0 +1,49 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.value {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 23px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  @include text-ellipsis;
+}
+
+.description {
+  font-weight: 400;
+  font-size: 16px;  
+  line-height: 19px;
+  margin-bottom: 34px;
+}
+
+.btn {
+  cursor: pointer;
+  color: $text-gray;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 0;
+  &:first-child {
+    margin-right: 30px;
+  }
+}
+
+.formRow {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+
+@media (max-width: $md-breakpoint) {
+  .value {
+    font-size: 16px;
+    line-height: 19px;
+  }
+  
+  .description {
+    font-size: 14px;
+    line-height: 16px;
+  }
+}

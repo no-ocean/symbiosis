@@ -14,6 +14,16 @@
   padding-right: 12px;
   @include text-ellipsis;
   @include button-hover-animation;
+
+  &[disabled] {
+    cursor: not-allowed;
+    opacity: .4;
+    &:hover {
+      &:before {
+        animation: none;
+      }
+    }
+  }
 }
 
 .label {  
@@ -22,6 +32,13 @@
 
 .largeRed {
   background-image: url(../../../public/buttons/btn_lg_fill_red.svg);
+  width: 280px;
+  height: 48px;
+  @include syncopate-font(16px);
+}
+
+.largeGray {
+  background-image: url(../../../public/buttons/btn_lg_gray.svg);
   width: 280px;
   height: 48px;
   @include syncopate-font(16px);
@@ -82,5 +99,12 @@
     left: 100%;
     opacity: 0;
     width: 0;
+  }
+}
+
+@media (max-width: $md-breakpoint) {
+  .largeRed, .largeBorderRed, .largeGray, .shortRed {
+    font-size: 12px;
+    line-height: 12px;
   }
 }

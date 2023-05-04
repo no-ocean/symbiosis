@@ -1,14 +1,22 @@
 $white: #FFFFFF;
 $black: #000000;
 $red: #A10B0B;
+$red-midium: #CA251D;
 $red-light: #E33A3A;
+$red-text: #B70F05;
 $green: #36BF65;
 $main-bg: #1E252B;
+$bg-light: #272F36;
 $text-light: #D8D8D8;
-$text-gray : #80828B;
+$text-gray: #80828B;
+$text-gray-light: #959BA0;
 $text-green: $green;
-
+$text-dark: #2C353D;
+$border-color: rgba($text-light, 0.2);
 $header-bg: #1B2126;
+
+$scrollbar: #B32721;
+$scrollbar-hover: $red-light;
 
 // grid
 $gutter-width: 30px;
@@ -21,4 +29,5 @@ $xs-breakpoint: 0;
 $sm-breakpoint: 576px;
 $md-breakpoint: 768px;
 $lg-breakpoint: 992px;
-$xl-breakpoint: 1360px;
+$xl-breakpoint: 1200px;
+$xxl-breakpoint: 1360px;

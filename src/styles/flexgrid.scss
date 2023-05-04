@@ -10,7 +10,8 @@
 // sm-breakpoint: 576px;
 // md-breakpoint: 768px;
 // lg-breakpoint: 992px;
-// xl-breakpoint: 1360px;
+// xl-breakpoint: 1200px;
+// xxl-breakpoint: 1360px;
 
 @import './variables';
 
@@ -51,7 +52,7 @@
     max-width: $lg-max;
   }
 }
-@media only screen and (min-width: $xl-breakpoint) {
+@media only screen and (min-width: $xxl-breakpoint) {
   .container {
     max-width: $xl-max;
   }
@@ -207,7 +208,33 @@
 .col-xl-offset-9,
 .col-xl-offset-10,
 .col-xl-offset-11,
-.col-xl-offset-12 {
+.col-xl-offset-12
+.col-xxl,
+.col-xxl-1,
+.col-xxl-2,
+.col-xxl-3,
+.col-xxl-4,
+.col-xxl-5,
+.col-xxl-6,
+.col-xxl-7,
+.col-xxl-8,
+.col-xxl-9,
+.col-xxl-10,
+.col-xxl-11,
+.col-xxl-12,
+.col-xxl-offset-0,
+.col-xxl-offset-1,
+.col-xxl-offset-2,
+.col-xxl-offset-3,
+.col-xxl-offset-4,
+.col-xxl-offset-5,
+.col-xxl-offset-6,
+.col-xxl-offset-7,
+.col-xxl-offset-8,
+.col-xxl-offset-9,
+.col-xxl-offset-10,
+.col-xxl-offset-11,
+.col-xxl-offset-12 {
   flex: 0 0 auto;
   flex-basis: 100%;
   box-sizing: border-box;
@@ -1110,6 +1137,198 @@
   }
 }
 
+@media only screen and (min-width: $xxl-breakpoint) {
+  .col-xxl,
+  .col-xxl-1,
+  .col-xxl-2,
+  .col-xxl-3,
+  .col-xxl-4,
+  .col-xxl-5,
+  .col-xxl-6,
+  .col-xxl-7,
+  .col-xxl-8,
+  .col-xxl-9,
+  .col-xxl-10,
+  .col-xxl-11,
+  .col-xxl-12,
+  .col-xxl-offset-0,
+  .col-xxl-offset-1,
+  .col-xxl-offset-2,
+  .col-xxl-offset-3,
+  .col-xxl-offset-4,
+  .col-xxl-offset-5,
+  .col-xxl-offset-6,
+  .col-xxl-offset-7,
+  .col-xxl-offset-8,
+  .col-xxl-offset-9,
+  .col-xxl-offset-10,
+  .col-xxl-offset-11,
+  .col-xxl-offset-12 {
+    flex: 0 0 auto;
+    box-sizing: border-box;
+    padding-right: $half-gutter-width;
+    padding-left: $half-gutter-width;
+  }
+
+  .col-xxl {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
+  }
+
+  .col-xxl-1 {
+    flex-basis: 8.33333333%;
+    max-width: 8.33333333%;
+  }
+
+  .col-xxl-2 {
+    flex-basis: 16.66666667%;
+    max-width: 16.66666667%;
+  }
+
+  .col-xxl-3 {
+    flex-basis: 25%;
+    max-width: 25%;
+  }
+
+  .col-xxl-4 {
+    flex-basis: 33.33333333%;
+    max-width: 33.33333333%;
+  }
+
+  .col-xxl-5 {
+    flex-basis: 41.66666667%;
+    max-width: 41.66666667%;
+  }
+
+  .col-xxl-6 {
+    flex-basis: 50%;
+    max-width: 50%;
+  }
+
+  .col-xxl-7 {
+    flex-basis: 58.33333333%;
+    max-width: 58.33333333%;
+  }
+
+  .col-xxl-8 {
+    flex-basis: 66.66666667%;
+    max-width: 66.66666667%;
+  }
+
+  .col-xxl-9 {
+    flex-basis: 75%;
+    max-width: 75%;
+  }
+
+  .col-xxl-10 {
+    flex-basis: 83.33333333%;
+    max-width: 83.33333333%;
+  }
+
+  .col-xxl-11 {
+    flex-basis: 91.66666667%;
+    max-width: 91.66666667%;
+  }
+
+  .col-xxl-12 {
+    flex-basis: 100%;
+    max-width: 100%;
+  }
+
+  .col-xxl-offset-0 {
+    margin-left: 0;
+  }
+
+  .col-xxl-offset-1 {
+    margin-left: 8.33333333%;
+  }
+
+  .col-xxl-offset-2 {
+    margin-left: 16.66666667%;
+  }
+
+  .col-xxl-offset-3 {
+    margin-left: 25%;
+  }
+
+  .col-xxl-offset-4 {
+    margin-left: 33.33333333%;
+  }
+
+  .col-xxl-offset-5 {
+    margin-left: 41.66666667%;
+  }
+
+  .col-xxl-offset-6 {
+    margin-left: 50%;
+  }
+
+  .col-xxl-offset-7 {
+    margin-left: 58.33333333%;
+  }
+
+  .col-xxl-offset-8 {
+    margin-left: 66.66666667%;
+  }
+
+  .col-xxl-offset-9 {
+    margin-left: 75%;
+  }
+
+  .col-xxl-offset-10 {
+    margin-left: 83.33333333%;
+  }
+
+  .col-xxl-offset-11 {
+    margin-left: 91.66666667%;
+  }
+
+  .start-xl {
+    justify-content: flex-start;
+  }
+
+  .center-xl {
+    justify-content: center;
+  }
+
+  .end-xl {
+    justify-content: flex-end;
+  }
+
+  .top-xl {
+    align-items: flex-start;
+  }
+
+  .middle-xl {
+    align-items: center;
+  }
+
+  .bottom-xl {
+    align-items: flex-end;
+  }
+
+  .around-xl {
+    justify-content: space-around;
+  }
+
+  .between-xl {
+    justify-content: space-between;
+  }
+
+  .first-xl {
+    order: -1;
+  }
+
+  .last-xl {
+    order: 1;
+  }
+
+  .initial-order-xl {
+    order: initial;
+  }
+}
+
 @media only screen and (max-width: $xs-breakpoint - 1) {
   .hidden-xs {
     display: none;
@@ -1128,13 +1347,13 @@
   }
 }
 
-@media only screen and (min-width: $lg-breakpoint) and (max-width: $xl-breakpoint - 1) {
+@media only screen and (min-width: $lg-breakpoint) and (max-width: $xxl-breakpoint - 1) {
   .hidden-lg {
     display: none;
   }
 }
 
-@media only screen and (min-width: $xl-breakpoint) {
+@media only screen and (min-width: $xxl-breakpoint) {
   .hidden-xl {
     display: none;
   }

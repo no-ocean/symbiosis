@@ -54,14 +54,14 @@
     background-color: rgba($color: $black, $alpha: 0);
     flex-direction: column;
     justify-content: center;
-    position: fixed;
+    position: absolute;
     left: 0;
     top: 0;
     bottom: 0;
     right: 0;
     opacity: 0;
     z-index: -100;
-    transition: all .2s ease-in;
+    transition: left .2s ease-in;
 
     .socialList {
       order: 0;
@@ -99,12 +99,13 @@
       bottom: 0;
       width: 100%;
       left: -100%;
-      transition: all .3s ease-in-out 0.1s;
+      transition: left .3s ease-in-out 0.1s;
     }
 
     &.active {
       background-color: rgba($color: #1B2126, $alpha: .8);
       transition: all .2s ease-out 0.1s;
+      position: fixed;
       opacity: 1;
       z-index: 50;
 

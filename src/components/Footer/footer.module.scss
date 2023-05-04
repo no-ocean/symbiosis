@@ -1,0 +1,40 @@
+@import "../../styles/variables";
+
+.footer {
+  background-color: $header-bg;
+  padding: 16px 0;
+}
+
+.footerRow {
+  display: flex;
+  align-items: center;
+}
+
+.socialLink {
+  transition: color .2s ease;
+  &:hover {
+    color: $red;
+  }
+}
+
+.socialList {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.socialItem {
+  display: flex;
+}
+
+.socialLink {
+  display: flex;
+  font-size: 24px;
+  margin: 0 10px;
+}
+
+@media (max-width: $lg-max) {
+  .footer {
+    padding: 12px 0;
+  }
+}

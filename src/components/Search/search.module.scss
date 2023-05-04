@@ -1,0 +1,38 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.search {
+  background-color: transparent;
+  display: flex;
+  padding: 14px 10px;
+  max-width: 386px;
+  margin-left: 13px;
+}
+
+.icon {
+  color: $red-text;
+  display: flex;
+  font-size: 20px;
+}
+
+input.input {
+  background-color: transparent;
+  border: none;
+  color: $text-light;
+  outline: none;
+  padding: 0 10px;
+  font-size: 16px;
+  &:focus-visible {
+    border: none;
+    outline: none;
+  }
+}
+
+@media(max-width: $lg-breakpoint) {
+  .search {
+    margin-left: 0;
+    margin-top: 65px;
+    max-width: initial;
+    width: 100%;
+  }
+}

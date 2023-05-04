@@ -7,6 +7,8 @@
 		box-sizing: inherit;
         background-repeat: no-repeat;
 	}
+
+    -webkit-tap-highlight-color: transparent;
 }
 
 html, body, #root, .app {
@@ -67,6 +69,10 @@ ul, ol {
     margin: 0;
 }
 
+.page {
+    padding-bottom: 90px;
+}
+
 .wrapper {
     display: flex;
     flex-direction: row;
@@ -96,4 +102,34 @@ ul, ol {
 .iframe {
     width: 100%;
     height: 100%;
+}
+
+.input,
+input[type='text'],
+input[type='password'],
+input[type='tel'],
+textarea {
+    background: $bg-light;
+    color: $text-light;
+    border: 1px solid $border-color;
+    border-radius: 7px;
+    padding: 20px 17px;
+    width: 100%;
+}
+
+label {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    margin-bottom: 10px;
+}
+
+textarea {
+    resize: none;
+    height: 179px;
+}
+
+.row-with-link {
+    padding-top: 30px;
+    padding-bottom: 50px;
 }

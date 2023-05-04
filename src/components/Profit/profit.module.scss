@@ -1,0 +1,61 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.wrapper {
+  background-image: url(../../../public/backgrounds/profit_bg.png);
+  width: 386px;
+  height: 95px;
+
+  display: flex;
+  align-items: center;
+
+  padding: 12px 26px;
+  margin-bottom: 46px;
+}
+
+.img {
+  width: 57px;
+  margin-right: 10px;
+  flex-shrink: 0;
+}
+
+.red {
+  color: $red-midium;
+}
+
+.text {
+  color: $text-dark;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21px;
+}
+
+// sm-breakpoint: 576px;
+// md-breakpoint: 768px;
+// lg-breakpoint: 992px;
+// xxl-breakpoint: 1360px;
+@media (max-width: $xxl-breakpoint) {
+  .wrapper {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 1200px) {
+  .wrapper {
+    background-size: cover;
+    border-radius: 8px;
+  }
+}
+
+@media (max-width: $lg-max) {
+
+}
+
+@media (max-width: $md-breakpoint) {
+
+}
+
+@media (max-width: $sm-breakpoint) {
+  
+}

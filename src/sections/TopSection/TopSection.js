@@ -15,6 +15,8 @@ const TopSection = () => {
               Symbiosis <br /> Portfolio Battle
             </h2>
             <Button
+              type={'routerLink'}
+              to={'/portfolio'}
               className={styles.button}
               view='largeRed'
               label='Create Portfolio'
@@ -42,7 +44,7 @@ const TopSection = () => {
                 <div className={styles.item}>
                   <div className={styles.itemImg}>
                     <img
-                      src='./page/raytaians_with_nft_item@2x.png'
+                      src='./page/one_percent@2x.png'
                       alt='raytaians with nft'
                     />
                   </div>

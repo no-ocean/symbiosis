@@ -1,0 +1,81 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.wrapper {
+  background-color: $bg-light;
+  padding: 22px 30px 26px;
+  max-width: 386px;
+  margin-bottom: 60px;
+  position: relative;
+  z-index: 5;
+
+  &:before {
+    content: '';
+    background-image: url(../../../public/backgrounds/description_parts/top.png);
+    background-position: 0 0;
+    position: absolute;
+    top: -14px;
+    left: -6px;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    margin-bottom: 46px;
+  }
+
+  &:after {
+    content: '';
+    background-image: url(../../../public/backgrounds/description_parts/bottom.png);
+    background-position: 0 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: -28px;
+    right: 0;
+    z-index: -1;
+  }
+
+  h5 {
+    color: $text-gray-light;
+    font-size: 18px;
+    line-height: 19px;
+    margin-top: 0;
+    margin-bottom: 25px;
+  }
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 1200px) {
+  .wrapper {
+    max-width: 100%;
+    width: 100%;
+    &:before,
+    &:after {
+      background-size: contain;
+    }
+  }
+}
+
+@media (max-width: $md-breakpoint) {
+  .wrapper {
+    padding: 22px 10px 26px;
+
+    h5 {
+      font-size: 16px;
+      line-height: 17px;
+    }
+  }
+}
+
+@media (max-width: $sm-breakpoint) {
+  .wrapper {
+    padding: 22px 10px 26px;
+
+    h5 {
+      font-size: 12px;
+      line-height: 12px;
+    }
+  }
+}

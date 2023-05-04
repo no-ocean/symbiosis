@@ -99,8 +99,8 @@
 // sm-breakpoint: 576px;
 // md-breakpoint: 768px;
 // lg-breakpoint: 992px;
-// xl-breakpoint: 1360px;
-@media (max-width: $xl-breakpoint) {
+// xxl-breakpoint: 1360px;
+@media (max-width: $xxl-breakpoint) {
   .wrapper {
     background-image: none;
     background-position: 0;

@@ -1,0 +1,55 @@
+@import "../../styles/mixins";
+@import "../../styles/variables";
+
+.wrapper {
+  background-color: $main-bg;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  height: 36px;
+  padding: 3px;
+  width: 100%;
+}
+
+.decrement,
+.increment {
+  background-color: transparent;
+  border-radius: 5px;
+  display: flex;
+  color: $border-color;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  width: 30px;
+  flex-shrink: 0;
+  padding: 0;
+  transition: all .2s ease;
+  font-size: 28px;
+  outline: none;
+  opacity: 1;
+  &:hover {
+    background-color: $bg-light;
+  }
+}
+
+.increment {
+  padding-top: 1px;
+}
+
+.decrement {
+  padding-bottom: 2px;
+}
+
+.input {
+  display: flex;
+  color: $text-light;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-grow: 1;
+  font-weight: 400;
+  font-size: 16px;
+  width: 100%;
+  min-width: 50px;
+  margin: 0 11px;
+}
