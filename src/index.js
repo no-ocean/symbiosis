@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { HashRouter, Route, Routes } from 'react-router-dom';
 import './styles/index.scss';
 import BattleLanding from './pages/BattleLanding';
 import Portfolio from './pages/Portfolio';
@@ -15,7 +15,7 @@ import BattleLandingPortfolioCreated from './pages/BattleLandingPortfolioCreated
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route exact path='/start' element={<BeforeBattle />} />
         <Route exact path='/after' element={<AfterBattle />} />
@@ -46,6 +46,6 @@ root.render(
         <Route exact path='/' element={<BattleLanding />} />
         {/* <Route path='*' element={<PageNotFound />} /> */}
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   </React.StrictMode>
 );
