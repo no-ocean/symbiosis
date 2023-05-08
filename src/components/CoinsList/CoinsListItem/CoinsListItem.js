@@ -4,9 +4,11 @@ import NumericInput from '../../NumericInput';
 import UpButton from '../../UpButton';
 import styles from './coinsListItem.module.scss';
 
-const CoinsListItem = ({ id, icon, value, title, link }) => {
+const CoinsListItem = ({ id, data }) => {
   const [modal, setModal] = useState(false);
   const [mobBlock, setMobBlock] = useState(false);
+
+  const { icon, value, title, link } = data;
 
   return (
     <>
@@ -47,7 +49,7 @@ const CoinsListItem = ({ id, icon, value, title, link }) => {
             <div className={`${styles.statistics} ${modal && styles.active}`}>
               <img src='./statistics/statistics.png' alt='' />
             </div>
-            <div className={styles.mobileBbuttons}>
+            <div className={styles.mobileButtons}>
               <a
                 href={link}
                 className={styles.btn}

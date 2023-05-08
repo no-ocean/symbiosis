@@ -1,0 +1,31 @@
+@import '../../styles/mixins';
+@import '../../styles/variables';
+
+.titleRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  h3 {
+    margin-bottom: 0;
+  }
+}
+
+.shareBlock {
+  position: relative;
+  padding: 15px 0;
+
+  &:hover {
+    .hover {
+      display: flex;
+    }
+  }
+}
+
+@media (max-width: $sm-breakpoint) {
+  .titleRow {
+    flex-wrap: wrap;
+    h3 {
+      margin-right: 15px;
+    }
+  }
+}

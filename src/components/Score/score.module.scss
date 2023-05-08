@@ -1,0 +1,40 @@
+@import '../../styles/mixins';
+@import '../../styles/variables';
+
+.wrapper {
+  background-color: $text-gray;
+  border-radius: 6px;
+  color: $white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 4px 6px;
+  width: 100%;
+
+  @include syncopate-font(16px);
+}
+
+.scoreUP {
+  background-color: $score-up;
+}
+
+.scoreDOWN {
+  background-color: $score-down;
+}
+
+// sm-breakpoint: 576px;
+// md-breakpoint: 768px;
+// lg-max: 960px;
+// lg-breakpoint: 992px;
+// xl-breakpoint: 1200px;
+// xxl-breakpoint: 1360px;
+@media (max-width: $xxl-breakpoint) {}
+@media (max-width: $xl-breakpoint) {}
+@media (max-width: $lg-max) {
+  .wrapper {
+    font-size: 12px;
+    padding: 6px 2px 4px;
+  }
+}
+@media (max-width: $md-breakpoint) {}
+@media (max-width: $sm-breakpoint) {}

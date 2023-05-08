@@ -1,0 +1,117 @@
+@import '../../styles/mixins';
+@import '../../styles/variables';
+
+.wrapper {
+  background-color: $bg-light;
+  border-radius: 7px;
+  display: grid;
+  align-items: center;
+  padding: 17px 20px;
+  font-size: 20px;
+  line-height: 23px;
+  grid-template-columns: 58px 1fr 1fr 80px 130px;
+  grid-gap: 20px;
+}
+
+.mobileCell {
+  align-items: center;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-gap: 20px;
+}
+
+.profitImg {
+  width: 50px;
+}
+
+.coins {
+  display: flex;
+  height: 36.32px;
+  overflow: hidden;
+}
+
+.coin {
+  position: relative;
+  margin-left: -5%;
+  z-index: 5;
+  img {
+    height: 100%;
+  }
+
+  &:first-of-type {
+    margin-left: 0
+  }
+}
+
+.value {
+  @include text-ellipsis;
+}
+
+.title {
+  @include text-ellipsis;
+}
+
+// sm-breakpoint: 576px;
+// md-breakpoint: 768px;
+// lg-breakpoint: 992px;
+// xl-breakpoint: 1200px;
+// xxl-breakpoint: 1360px;
+@media (max-width: $xxl-breakpoint) {}
+@media (max-width: $xl-breakpoint) {
+  .wrapper {
+    grid-gap: 14px;
+  }
+}
+@media (max-width: $lg-max) {
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: initial;
+  }
+  .position {
+    width: auto;
+    order: 0;
+  }
+  .title {
+    order: 1;
+    margin-right: auto;
+  }
+  .profit {
+    order: 2;
+  }
+  .profitImg {
+    width: 36px;
+  }
+  .mobileCell {
+    display: flex;
+    order: 3;
+    grid-gap: initial;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+  }
+  .coins {
+    width: 50%;
+    flex-shrink: 0;
+  }
+
+  .value {
+    width: 50%;
+    flex-shrink: 0;
+    text-align: right;
+  }
+
+  .button {
+    display: flex;
+    order: 5;
+    width: 100%;
+  }
+
+  .editBtn {
+    flex-grow: 1;
+  }
+}
+@media (max-width: $md-breakpoint) {
+
+}
+@media (max-width: $sm-breakpoint) {}

@@ -1,0 +1,23 @@
+@import '../../styles/mixins';
+@import '../../styles/variables';
+
+.btn {
+  background: $text-dark;
+  border-radius: 5px;
+  display: flex;
+  color: $text-light;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  line-height: 16px;
+  padding: 8px 38px;
+
+  svg {
+    font-size: 20px;
+    margin-right: 4px;
+  }
+
+  &:hover {
+    background: lighten($color: $text-dark, $amount: 3.2);
+  }
+}

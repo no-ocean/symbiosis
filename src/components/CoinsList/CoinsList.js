@@ -69,15 +69,11 @@ const CoinsList = () => {
   return (
     <div className={styles.wrapper}>
       {data.map((item, index) => {
-        const { icon, value, title, link } = item;
         return (
           <CoinsListItem
-            id={title + index}
-            key={title + index}
-            icon={icon}
-            value={value}
-            title={title}
-            link={link}
+            id={item.title + index}
+            key={item.title + index}
+            data={item}
           />
         );
       })}

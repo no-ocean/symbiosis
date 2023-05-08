@@ -14,7 +14,7 @@ const Portfolio = () => {
       <Header />
       <div className='page'>
         <div className='container-fluid'>
-          <div className='row row-with-link'>
+          <div className='row rowWithLink'>
             <div className='col-md-12'>
               <BackLink to='/' />
             </div>
