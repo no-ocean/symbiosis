@@ -5,7 +5,7 @@ import styles from './myPortfolio.module.scss';
 import ShareModal from '../../components/ShareModal/ShareModal';
 import MyPortfolioRow from '../../components/MyPortfolioRow/MyPortfolioRow';
 
-const MyPortfolio = () => {
+const MyPortfolio = ({ data }) => {
   return (
     <div className={styles.wrapper}>
       <div className='container-fluid'>
@@ -21,7 +21,7 @@ const MyPortfolio = () => {
         </div>
 
         <div className={styles.portfolioRow}>
-          <MyPortfolioRow />
+          <MyPortfolioRow data={data} />
         </div>
       </div>
     </div>

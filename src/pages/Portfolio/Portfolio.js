@@ -25,7 +25,7 @@ const Portfolio = () => {
           <div className='row'>
             <div className='col-lg-5 col-xl-4'>
               <Profit />
-              <DescWithEdit />
+              <DescWithEdit editable={true} />
               <SidebarBalance />
             </div>
             <div className='col-lg-7 col-xl-8'>

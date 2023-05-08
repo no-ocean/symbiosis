@@ -2,57 +2,7 @@ import React from 'react';
 import styles from './statisticTable.module.scss';
 import StatisticTableRow from './StatisticTableRow';
 
-const data = [
-  {
-    position: '0000',
-    icon: './coins/abt2.png',
-    title: 'Oooo',
-    share: '10%',
-    sum: '$1000.0',
-    stats1h: ['+2.87%', 'grow'],
-    stats24h: ['-0.17%', 'loss'],
-    stats7d: ['0.00%', ''],
-    link: 'https://google.com',
-    score: ['+19%', 'grow'],
-  },
-  {
-    position: '0000',
-    icon: './coins/act2.png',
-    title: 'Usdt',
-    share: '20%',
-    sum: '$200.0',
-    stats1h: ['+2.87%', 'grow'],
-    stats24h: ['-0.17%', 'loss'],
-    stats7d: ['0.00%', ''],
-    link: 'https://google.com',
-    score: ['+19%', 'loss'],
-  },
-  {
-    position: '0000',
-    icon: './coins/abt2.png',
-    title: 'Oooo',
-    share: '10%',
-    sum: '$1000.0',
-    stats1h: ['+2.87%', 'grow'],
-    stats24h: ['-0.17%', 'loss'],
-    stats7d: ['0.00%', ''],
-    link: 'https://google.com',
-    score: ['+19%', 'grow'],
-  },
-  {
-    position: '0000',
-    icon: './coins/act2.png',
-    title: 'USDT',
-    share: '20%',
-    sum: '$200.0',
-    stats1h: ['+2.87%', 'grow'],
-    stats24h: ['-0.17%', 'loss'],
-    stats7d: ['0.00%', ''],
-    link: 'https://google.com',
-  },
-];
-
-const StatisticTable = () => {
+const StatisticTable = ({ data }) => {
   return (
     <div className='container-fluid'>
       <div className={styles.wrapper}>

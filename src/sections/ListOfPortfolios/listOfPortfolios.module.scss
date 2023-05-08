@@ -1,23 +1,32 @@
 @import '../../styles/mixins';
 @import '../../styles/variables';
 
+
 .wrapper {
-  background-color: $bg-light;
-  border-radius: 7px;
+  padding-top: 70px;
+}
+
+.row {
+  background-color: transparent !important;
+  border-top: 1px solid #2C353D;
+  border-bottom: 1px solid #2C353D;
   display: grid;
   align-items: center;
   padding: 17px 20px;
   font-size: 20px;
   line-height: 23px;
-  grid-template-columns: 58px 1fr 1fr 80px 130px;
+  grid-template-columns: 58px 1fr 1fr 1fr 80px 130px;
   grid-gap: 20px;
 }
 
-.mobileCell {
-  align-items: center;
-  display: grid;
-  grid-template-columns: 2fr 1fr;
-  grid-gap: 20px;
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 70px 0;
+  width: 100%;
+  button {
+    margin: 0 15px;
+  }
 }
 
 .profitImg {
@@ -54,6 +63,7 @@
 }
 
 .title {
+  max-width: 260px;
   @include text-ellipsis;
 }
 
@@ -61,19 +71,26 @@
   background-color: $red;
   font-size: 16px;
 }
+
+.mobileRowBreaker {
+  display: none;
+}
+
 // sm-breakpoint: 576px;
 // md-breakpoint: 768px;
+// lg-max: 960px;
 // lg-breakpoint: 992px;
 // xl-breakpoint: 1200px;
 // xxl-breakpoint: 1360px;
+
 @media (max-width: $xxl-breakpoint) {}
 @media (max-width: $xl-breakpoint) {
-  .wrapper {
+  .row {
     grid-gap: 14px;
   }
 }
 @media (max-width: $lg-max) {
-  .wrapper {
+  .row {
     display: flex;
     flex-wrap: wrap;
     grid-gap: initial;
@@ -81,50 +98,61 @@
   .position {
     width: auto;
     order: 0;
-    margin-right: 10px;
   }
   .title {
     order: 1;
-    margin-right: auto;
+    margin-left: 10px;
   }
   .profit {
     order: 2;
+    margin-left: auto;
   }
   .profitImg {
     width: 36px;
   }
-  .mobileCell {
+  .mobileRowBreaker {
     display: flex;
-    order: 3;
-    grid-gap: initial;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    width: 100%;
+    flex-basis: 100%;
+    height: 10px;
+    order: 4;
   }
+  .value {
+    margin-left: 10px;
+    text-align: right;
+    order: 3;
+  }
+  
   .coins {
     width: 60%;
     flex-shrink: 0;
-  }
-
-  .value {
-    width: 40%;
-    flex-shrink: 0;
-    text-align: right;
+    order: 5;
   }
 
   .button {
     display: flex;
-    order: 5;
-    width: 100%;
-  }
-
-  .editBtn {
-    flex-grow: 1;
+    order: 6;
+    width: 40%;
   }
 }
 @media (max-width: $md-breakpoint) {
-  .wrapper {
-    padding: 10px;
+  .pagination {
+    flex-direction: column;
+    button {
+      margin: 0 auto 20px;
+    }
+  }
+  .profitImg {
+    width: 20px;
+  }
+  .title, .value {
+    font-size: 16px;
+  }
+  .title {
+    max-width: 180px;
   }
 }
-@media (max-width: $sm-breakpoint) {}
+@media (max-width: $sm-breakpoint) {
+  .title {
+    max-width: 102px;
+  }
+}

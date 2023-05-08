@@ -7,7 +7,7 @@ const description = {
   text: 'The comet, at first glance, solves the sextant in many ways, while the density of the Universe is 3 * 10 ...',
 };
 
-const DescWithEdit = () => {
+const DescWithEdit = ({ editable }) => {
   const [desc, setDesc] = useState(description);
   const [editMode, setEditMode] = useState(false);
   const [value, setValue] = useState(desc.value);
@@ -43,12 +43,14 @@ const DescWithEdit = () => {
         <>
           <p className={styles.value}>{desc.value}</p>
           <p className={styles.description}>{desc.text}</p>
-          <button className={styles.btn} onClick={() => onEdit()}>
-            Edit
-          </button>
+          {editable && (
+            <button className={styles.btn} onClick={() => onEdit()}>
+              Edit
+            </button>
+          )}
         </>
       )}
-      {editMode && (
+      {editable && editMode && (
         <form onSubmit={(e) => onSave(e)} autoComplete='off'>
           <div className={styles.formRow}>
             <label htmlFor='value'>Title*</label>
