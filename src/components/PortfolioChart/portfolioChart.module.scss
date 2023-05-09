@@ -1,0 +1,30 @@
+@import '../../styles/mixins';
+@import '../../styles/variables';
+
+.wrapper {
+  padding-bottom: 150px;
+}
+
+.title {
+  margin-bottom: 30px;
+}
+
+.chart {
+  max-width: 1012px;
+}
+
+// sm-breakpoint: 576px;
+// md-breakpoint: 768px;
+// lg-max: 960px;
+// lg-breakpoint: 992px;
+// xl-breakpoint: 1200px;
+// xxl-breakpoint: 1360px;
+@media (max-width: $xxl-breakpoint) {}
+@media (max-width: $xl-breakpoint) {}
+@media (max-width: $lg-max) {
+  .wrapper {
+    padding-bottom: 60px;
+  }
+}
+@media (max-width: $md-breakpoint) {}
+@media (max-width: $sm-breakpoint) {}

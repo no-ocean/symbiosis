@@ -84,7 +84,7 @@ const BeforeBattle = () => {
     <>
       <Header />
       <div className='page'>
-        <TopSection />
+        <TopSection completed={false} />
         <MyPortfolio data={myPortfolioBeforeData} />
         <StatisticTable data={statisticTableBeforeData} />
         <BattleImage />

@@ -58,3 +58,11 @@
   @include syncopate-font(14px);
   @include text-ellipsis;
 }
+
+.scoreUP {
+  color: $score-up;
+}
+
+.scoreDOWN {
+  color: $score-down;
+}

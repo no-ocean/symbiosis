@@ -14,7 +14,7 @@ const BattleLandingThanks = () => {
       <Header />
 
       <div className='page'>
-        <TopSection />
+        <TopSection completed={false} />
 
         <AboutSection />
 

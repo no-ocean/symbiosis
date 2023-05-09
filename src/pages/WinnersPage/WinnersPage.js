@@ -64,9 +64,10 @@ const myPortfolioAfterData = {
   score: ['+19%', 'grow'],
 };
 
-const portfoliosData = [
+const winnersData = [
   {
     id: '0000',
+    winPosition: 3,
     title: 'Metacomet',
     coins: [
       {
@@ -119,12 +120,13 @@ const portfoliosData = [
       },
     ],
     value: '$1000',
-    profit: true,
+    profit: false,
     editable: false,
     score: ['+19%', 'grow'],
   },
   {
     id: '0000',
+    winPosition: 1,
     title: 'Metacomet',
     coins: [
       {
@@ -143,6 +145,7 @@ const portfoliosData = [
   },
   {
     id: '0000',
+    winPosition: 2,
     title: 'Metacomet',
     coins: [
       {
@@ -171,20 +174,127 @@ const portfoliosData = [
     editable: false,
     score: ['-19%', 'loss'],
   },
+  {
+    id: '0010',
+    title: 'Metacomet',
+    coins: [
+      {
+        title: 'Act',
+        icon: './coins/act2.png',
+      },
+      {
+        title: 'Abt',
+        icon: './coins/abt.png',
+      },
+      {
+        title: 'Aave',
+        icon: './coins/aave.png',
+      },
+      {
+        title: 'Pac',
+        icon: './coins/$pac.png',
+      },
+      {
+        title: 'Act',
+        icon: './coins/act2.png',
+      },
+    ],
+    value: '$50',
+    profit: false,
+    editable: false,
+    score: ['-19%', 'loss'],
+  },
+  {
+    id: '0000',
+    title: 'Metacomet',
+    coins: [
+      {
+        title: 'Act',
+        icon: './coins/act2.png',
+      },
+      {
+        title: 'Abt',
+        icon: './coins/abt.png',
+      },
+      {
+        title: 'Aave',
+        icon: './coins/aave.png',
+      },
+      {
+        title: 'Pac',
+        icon: './coins/$pac.png',
+      },
+      {
+        title: 'Act',
+        icon: './coins/act2.png',
+      },
+    ],
+    value: '$200',
+    profit: true,
+    editable: false,
+    score: ['-19%', 'loss'],
+  },
+  {
+    id: '0000',
+    title: 'Metacomet',
+    coins: [
+      {
+        title: 'Act',
+        icon: './coins/act2.png',
+      },
+      {
+        title: 'Abt',
+        icon: './coins/abt.png',
+      },
+      {
+        title: 'Aave',
+        icon: './coins/aave.png',
+      },
+      {
+        title: 'Pac',
+        icon: './coins/$pac.png',
+      },
+      {
+        title: 'Act',
+        icon: './coins/act2.png',
+      },
+    ],
+    value: '$900',
+    profit: true,
+    editable: false,
+    score: ['+32%', 'grow'],
+  },
+  {
+    title: 'Metacomet',
+    coins: [
+      {
+        title: 'Act',
+        icon: './coins/act2.png',
+      },
+      {
+        title: 'Abt',
+        icon: './coins/abt.png',
+      },
+    ],
+    value: '$500',
+    profit: false,
+    editable: false,
+    score: ['+8%', 'grow'],
+  },
 ];
 
-const AfterBattle = () => {
+const WinnersPage = () => {
   return (
     <>
       <Header />
       <div className='page'>
-        <TopSection completed={false} />
+        <TopSection completed={true} data={winnersData} />
         <MyPortfolio data={myPortfolioAfterData} />
-        <ListOfPortfolios data={portfoliosData} />
+        <ListOfPortfolios data={winnersData} />
       </div>
       <Footer />
     </>
   );
 };
 
-export default AfterBattle;
+export default WinnersPage;

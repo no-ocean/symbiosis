@@ -1,124 +1,25 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Button from '../../components/Button/Button';
 import styles from './listOfPortfolios.module.scss';
 import PortfolioRow from './PortfolioRow';
 
-const data = [
-  {
-    id: '0000',
-    title: 'Metacomet',
-    coins: [
-      {
-        title: 'Act',
-        icon: './coins/act2.png',
-      },
-      {
-        title: 'Abt',
-        icon: './coins/abt.png',
-      },
-      {
-        title: 'Aave',
-        icon: './coins/aave.png',
-      },
-      {
-        title: 'Pac',
-        icon: './coins/$pac.png',
-      },
-      {
-        title: 'Act',
-        icon: './coins/act2.png',
-      },
-      {
-        title: 'Abt',
-        icon: './coins/abt.png',
-      },
-      {
-        title: 'Aave',
-        icon: './coins/aave.png',
-      },
-      {
-        title: 'Pac',
-        icon: './coins/$pac.png',
-      },
-      {
-        title: 'Act',
-        icon: './coins/act2.png',
-      },
-      {
-        title: 'Abt',
-        icon: './coins/abt.png',
-      },
-      {
-        title: 'Aave',
-        icon: './coins/aave.png',
-      },
-      {
-        title: 'Pac',
-        icon: './coins/$pac.png',
-      },
-    ],
-    value: '$1000',
-    profit: true,
-    editable: false,
-    score: ['+19%', 'grow'],
-  },
-  {
-    id: '0000',
-    title: 'Metacomet',
-    coins: [
-      {
-        title: 'Act',
-        icon: './coins/act2.png',
-      },
-      {
-        title: 'Abt',
-        icon: './coins/abt.png',
-      },
-    ],
-    value: '$1000',
-    profit: true,
-    editable: false,
-    score: ['+19%', 'grow'],
-  },
-  {
-    id: '0000',
-    title: 'Metacomet',
-    coins: [
-      {
-        title: 'Act',
-        icon: './coins/act2.png',
-      },
-      {
-        title: 'Abt',
-        icon: './coins/abt.png',
-      },
-      {
-        title: 'Aave',
-        icon: './coins/aave.png',
-      },
-      {
-        title: 'Pac',
-        icon: './coins/$pac.png',
-      },
-      {
-        title: 'Act',
-        icon: './coins/act2.png',
-      },
-    ],
-    value: '$200',
-    profit: false,
-    editable: false,
-    score: ['-19%', 'loss'],
-  },
-];
+const ListOfPortfolios = ({ data }) => {
+  const [sortData, setSortData] = useState([...data]);
 
-const ListOfPortfolios = () => {
+  useEffect(() => {
+    if (data.some((item) => item.winPosition !== undefined)) {
+      setSortData(data.sort((a, b) => a.winPosition - b.winPosition));
+    } else {
+      setSortData(data);
+    }
+  }, []);
+
   return (
     <div className={styles.wrapper}>
       <div className='container-fluid'>
         <h3>List of Portfolios</h3>
         <div className={styles.table}>
-          {data.map((item, index) => {
+          {sortData.map((item, index) => {
             return <PortfolioRow key={index + item.title} data={item} />;
           })}
         </div>

@@ -7,6 +7,7 @@ import Profit from '../../components/Profit/Profit';
 import BattleStatSection from '../../sections/BattleStatSection';
 import MyPortfolio from '../../sections/MyPortfolio';
 import StatisticTable from '../../components/StatisticTable';
+import PortfolioChart from '../../components/PortfolioChart';
 
 //data withot score. example: ['+19%', 'grow'] or ['-19%', 'less']
 const statisticTableAfterData = [
@@ -147,6 +148,7 @@ const BattleStatistics = () => {
 
       <MyPortfolio data={myPortfolioAfterData} />
       <StatisticTable data={statisticTableAfterData} />
+      <PortfolioChart />
 
       <Footer />
     </>

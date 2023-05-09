@@ -2,7 +2,7 @@ import TimerBlock from '../../components/Timer/TimerBlock';
 import Button from '../../components/Button/Button';
 import styles from './topSection.module.scss';
 
-const TopSection = () => {
+const TopSection = ({ data, completed }) => {
   return (
     <div className={styles.topSection}>
       <div className='container-fluid'>
@@ -40,7 +40,7 @@ const TopSection = () => {
                 <span className={styles.itemDesc}>Number of raytaians</span>
               </div>
 
-              {false && (
+              {completed && (
                 <div className={styles.item}>
                   <div className={styles.itemImg}>
                     <img
@@ -55,7 +55,7 @@ const TopSection = () => {
             </div>
           </div>
           <div className={styles.right}>
-            <TimerBlock />
+            <TimerBlock completed={completed} data={data} />
           </div>
         </div>
       </div>

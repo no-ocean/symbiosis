@@ -4,12 +4,7 @@ import WinnerTable from '../WinnerTable';
 import Timer from './Timer';
 import styles from './timer.module.scss';
 
-const timerBlockData = {
-  completed: false,
-};
-
-const TimerBlock = () => {
-  const { completed } = timerBlockData;
+const TimerBlock = ({ data, completed }) => {
   return (
     <div className={styles.wrapper}>
       <div className={`${styles.title} ${completed && styles.finished}`}>
@@ -20,7 +15,7 @@ const TimerBlock = () => {
         {completed ? <ScheduleTable /> : <Timer />}
       </div>
 
-      {completed ? <WinnerTable /> : <ScheduleTable />}
+      {completed && data ? <WinnerTable data={data} /> : <ScheduleTable />}
     </div>
   );
 };

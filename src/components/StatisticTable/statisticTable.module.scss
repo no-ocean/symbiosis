@@ -322,6 +322,10 @@
   }
 }
 @media (max-width: $lg-max) {
+  .wrapper {
+    margin-bottom: 60px;
+  }
+  
   .header1 {
     top: 60px;
   }
