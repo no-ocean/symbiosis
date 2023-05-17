@@ -3,7 +3,6 @@
 
 .wrapper {
   padding-top: 80px;
-  padding-bottom: 180px;
 }
 
 .container {
@@ -20,6 +19,20 @@
   top: -150px;
   left: 0;
   z-index: 10;
+  img {
+    opacity: 0;
+  }
+  &:before {
+    content: '';
+    background-image: url(../../../public/images/be_on_step_img_full@2x.png);
+    background-size: contain;
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: flex;
+    width: 972px;
+    height: 798.02px;
+  }
 }
 
 .content {
@@ -106,6 +119,7 @@
 // sm-breakpoint: 576px;
 // md-breakpoint: 768px;
 // lg-breakpoint: 992px;
+// xl-breakpoint: 1200px;
 // xxl-breakpoint: 1360px;
 @media (max-width: $xxl-breakpoint) {
   .content {
@@ -119,6 +133,12 @@
     width: 42%;
     top: calc(50% - 50px);
     transform: translateY(-50%);
+    img {
+      opacity: 1;
+    }
+    &:before {
+      display: none;
+    }
   }
   .items {
     padding-top: 10%;
@@ -137,7 +157,6 @@
 @media (max-width: 1200px) {
   .wrapper {
     padding-top: 0;
-    padding-bottom: 90px;
   }
 }
 
@@ -168,13 +187,6 @@
     &::after {
       display: none;
     }
-  }
-}
-
-@media (max-width: $lg-max) {
-  .wrapper {
-    padding-top: 0;
-    padding-bottom: 60px;
   }
 }
 

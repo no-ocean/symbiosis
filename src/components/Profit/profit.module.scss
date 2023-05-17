@@ -13,10 +13,28 @@
   margin-bottom: 46px;
 }
 
+
 .img {
-  width: 57px;
+  width: 63px;
   margin-right: 10px;
   flex-shrink: 0;
+}
+
+.noNFT {
+  background-image: url(../../../public/backgrounds/no_nft_bg.png);
+  height: 125px;
+  align-items: flex-start;
+  padding: 18px 26px;
+  .img {
+    border-radius: 6px;
+    overflow: hidden;
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
+  }
+}
+
+.noNftText {
+  display: flex;
+  flex-direction: column;
 }
 
 .red {
@@ -28,6 +46,39 @@
   font-size: 18px;
   font-weight: 500;
   line-height: 21px;
+}
+
+a.link {
+  @include syncopate-font(16px);
+  background-color: rgba(236, 240, 248, 0.19);
+  border-radius: 7px;
+  color: $red-text;
+  display: flex;
+  padding: 3px 14px;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 245px;
+  flex-grow: 1;
+  margin-top: 10px;
+  transition: all .3s ease;
+
+  span {
+    padding-top: 3px;
+  }
+
+  svg {
+    transition: all .2s ease;
+    font-size: 30px;
+  }
+
+  &:hover {
+    background-color: rgba(236, 240, 248, 0.4);
+    color: lighten($color: $red-text, $amount: .5);
+
+    svg {
+      transform: translateX(2px);
+    }
+  }
 }
 
 // sm-breakpoint: 576px;

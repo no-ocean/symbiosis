@@ -24,7 +24,8 @@ const Portfolio = () => {
         <div className='container-fluid'>
           <div className='row'>
             <div className='col-lg-5 col-xl-4'>
-              <Profit />
+              <Profit hasNFT={true} />
+              <Profit hasNFT={false} />
               <DescWithEdit editable={true} />
               <SidebarBalance />
             </div>

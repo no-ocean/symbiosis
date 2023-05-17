@@ -1,10 +1,6 @@
 @import '../../styles/mixins';
 @import '../../styles/variables';
 
-.wrapper {
-  padding-bottom: 150px;
-}
-
 .title {
   margin-bottom: 30px;
 }
@@ -21,10 +17,6 @@
 // xxl-breakpoint: 1360px;
 @media (max-width: $xxl-breakpoint) {}
 @media (max-width: $xl-breakpoint) {}
-@media (max-width: $lg-max) {
-  .wrapper {
-    padding-bottom: 60px;
-  }
-}
+@media (max-width: $lg-max) {}
 @media (max-width: $md-breakpoint) {}
 @media (max-width: $sm-breakpoint) {}

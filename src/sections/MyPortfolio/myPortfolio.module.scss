@@ -5,6 +5,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding-top: 75px;
+  padding-right: 20px;
   h3 {
     margin-bottom: 0;
   }
@@ -18,6 +20,12 @@
     .hover {
       display: flex;
     }
+  }
+}
+
+@media (max-width: $lg-max) {
+  .titleRow {
+    padding-right: 0;
   }
 }
 

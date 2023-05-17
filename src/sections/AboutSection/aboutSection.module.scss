@@ -47,6 +47,20 @@
   position: absolute;
   right: -90px;
   top: -36px;
+  img {
+    opacity: 0;
+  }
+  &:before {
+    content: '';
+    background-image: url(../../../public/images/about_partners_img_full@2x.png);
+    background-size: contain;
+    position: absolute;
+    left: 0;
+    top: -156px;
+    display: flex;
+    width: 991.43px;
+    height: 727.14px;
+  }
 }
 
 .title {
@@ -148,6 +162,9 @@
       height: 30px;
       right: 0;
       background-color: $main-bg;
+      background-image: none;
+      background-size: initial;
+      left: initial;
       position: absolute;
     }
     &:after {
@@ -164,6 +181,7 @@
       max-width: 100%;
       z-index: 15;
       position: relative;
+      opacity: 1;
     }
   }
 }

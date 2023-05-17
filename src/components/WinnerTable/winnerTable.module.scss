@@ -66,3 +66,22 @@
 .scoreDOWN {
   color: $score-down;
 }
+
+@media (max-width: $sm-breakpoint) {
+  .title {
+    font-size: 14px;
+  }
+
+  .score {
+    padding-top: 4px;
+    font-size: 12px;
+    width: 54px;
+  }
+
+  .value {
+    padding-top: 4px;
+    font-size: 12px;
+    margin-right: 4px;
+    width: 60px;
+  }
+}

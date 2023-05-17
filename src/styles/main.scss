@@ -70,7 +70,8 @@ ul, ol {
 }
 
 .page {
-    padding-bottom: 90px;
+    overflow: hidden;
+    padding-bottom: 200px;
 }
 
 .wrapper {
@@ -113,7 +114,10 @@ textarea {
     color: $text-light;
     border: 1px solid $border-color;
     border-radius: 7px;
-    padding: 20px 17px;
+    padding: 18px 17px;
+    font-size: 16px;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 19px;
     width: 100%;
 }
 

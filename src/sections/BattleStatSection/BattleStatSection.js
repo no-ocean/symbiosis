@@ -52,7 +52,7 @@ const BattleStatSection = () => {
             <div className={styles.descInner}>
               <h4 className={styles.descTitle}>
                 <span>180</span>
-                <img src='./page/plus_one_percent@2x.png' alt='plus' />
+                <img src='./page/one_percent@2x.png' alt='plus' />
               </h4>
               <p className={styles.description}>Raytaians with NFT</p>
             </div>

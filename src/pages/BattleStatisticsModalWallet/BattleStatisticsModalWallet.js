@@ -137,7 +137,7 @@ const BattleStatisticsModalWallet = () => {
         <div className='container-fluid'>
           <div className='row'>
             <div className='col-lg-5 col-xl-4'>
-              <Profit />
+              <Profit hasNFT={true} />
               <DescWithEdit editable={false} />
             </div>
             <div className='col-lg-7 col-xl-8'>
