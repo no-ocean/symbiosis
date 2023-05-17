@@ -63,6 +63,48 @@ const data = [
     title: 'USDT',
     link: 'https://google.com',
   },
+  {
+    icon: './coins/act.png',
+    value: '19773.56',
+    title: 'USDT',
+    link: 'https://google.com',
+  },
+  {
+    icon: './coins/act.png',
+    value: '19773.56',
+    title: 'USDT',
+    link: 'https://google.com',
+  },
+  {
+    icon: './coins/act.png',
+    value: '19773.56',
+    title: 'USDT',
+    link: 'https://google.com',
+  },
+  {
+    icon: './coins/act.png',
+    value: '19773.56',
+    title: 'USDT',
+    link: 'https://google.com',
+  },
+  {
+    icon: './coins/act.png',
+    value: '19773.56',
+    title: 'USDT',
+    link: 'https://google.com',
+  },
+  {
+    icon: './coins/act.png',
+    value: '19773.56',
+    title: 'USDT',
+    link: 'https://google.com',
+  },
+  {
+    icon: './coins/act.png',
+    value: '19773.56',
+    title: 'USDT',
+    link: 'https://google.com',
+  },
 ];
 
 const CoinsList = () => {
