@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/symbiosis/static/css/main.a36b6d74.css",
-    "main.js": "/symbiosis/static/js/main.c9fa806d.js",
+    "main.css": "/symbiosis/static/css/main.1c5aeb26.css",
+    "main.js": "/symbiosis/static/js/main.6ea27653.js",
     "static/media/be_on_step_img_full@2x.png": "/symbiosis/static/media/be_on_step_img_full@2x.9a8d5fc537baafe79723.png",
     "static/media/battle_image_section@2x.png": "/symbiosis/static/media/battle_image_section@2x.63cfc5ffa790683d87ec.png",
     "static/media/about_partners_img_full@2x.png": "/symbiosis/static/media/about_partners_img_full@2x.a664edcc1a93b8a54dc8.png",
@@ -20,11 +20,11 @@
     "static/media/btn_sm_transparent_white.svg": "/symbiosis/static/media/btn_sm_transparent_white.82d9c237b80ab9b83048.svg",
     "static/media/btn_lg_fill_red.svg": "/symbiosis/static/media/btn_lg_fill_red.bb46cc7c5d6638de3bf4.svg",
     "static/media/btn_lg_gray.svg": "/symbiosis/static/media/btn_lg_gray.a5764bbf07a1784268c1.svg",
-    "main.a36b6d74.css.map": "/symbiosis/static/css/main.a36b6d74.css.map",
-    "main.c9fa806d.js.map": "/symbiosis/static/js/main.c9fa806d.js.map"
+    "main.1c5aeb26.css.map": "/symbiosis/static/css/main.1c5aeb26.css.map",
+    "main.6ea27653.js.map": "/symbiosis/static/js/main.6ea27653.js.map"
   },
   "entrypoints": [
-    "static/css/main.a36b6d74.css",
-    "static/js/main.c9fa806d.js"
+    "static/css/main.1c5aeb26.css",
+    "static/js/main.6ea27653.js"
   ]
 }
