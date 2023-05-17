@@ -2,21 +2,22 @@
 @import '../../styles/variables';
 
 .wrapper {
-  background-image: url(../../../public/backgrounds/battle_statistics_bg.png);
-  background-size: contain;
   padding: 24px 124px 24px 30px;
+  background-image: url('../../../public/backgrounds/battle_statistics_bg.png');
+  background-size: contain;
 }
 
 .title {
-  color: $text-gray-light;
   margin-bottom: 0;
+  color: $text-gray-light;
 }
 
 .row {
-  border-bottom: 2px solid $border-color-dark;
-  padding: 30px 0;
   display: grid;
   grid-template-columns: 1.4fr 1fr;
+  padding: 30px 0;
+  border-bottom: 2px solid $border-color-dark;
+
   &:last-of-type {
     border-bottom: none;
   }
@@ -28,13 +29,16 @@
 
 .statsTitle {
   @include syncopate-font(22px);
+
   display: flex;
   align-items: center;
   margin-bottom: 22px;
+
   svg {
-    font-size: 26px;
     margin-right: 10px;
+    font-size: 26px;
   }
+
   span {
     padding-top: 3px;
   }
@@ -65,19 +69,22 @@
 
 .descIcon {
   width: 42px;
-  margin-right: 32px;
   margin-top: -3px;
+  margin-right: 32px;
 }
 
 .descTitle {
   @include syncopate-font(25px);
+
   display: flex;
   align-items: center;
   line-height: 23px;
+
   img {
     width: 23px;
     margin-left: 6px;
   }
+
   span {
     padding-top: 3px;
   }
@@ -95,13 +102,12 @@
 // lg-breakpoint: 992px;
 // xl-breakpoint: 1200px;
 // xxl-breakpoint: 1360px;
-@media (max-width: $xxl-breakpoint) {}
 @media (max-width: $xl-breakpoint) {
   .wrapper {
-    background-image: none;
-    background-color: $bg-light;
-    border-radius: 12px;
     padding: 24px 30px;
+    background-color: $bg-light;
+    background-image: none;
+    border-radius: 12px;
   }
 }
 @media (max-width: $lg-breakpoint) {
@@ -118,8 +124,10 @@
     display: flex;
     justify-content: space-between;
   }
+
   .statsItem {
     margin-right: 15%;
+
     &:last-of-type {
       margin-right: 0;
     }
@@ -133,9 +141,11 @@
   .row {
     &:first-of-type {
       flex-direction: column;
+
       .col {
         flex-direction: column;
       }
+
       .description {
         color: $text-gray;
       }
@@ -147,17 +157,18 @@
   }
 
   .statsItem {
-    margin-right: 0;
-    margin-bottom: 20px;
     flex-direction: row;
     align-items: center;
+    margin-right: 0;
+    margin-bottom: 20px;
   }
 
   .statsTitle {
-    margin-bottom: 0;
-    margin-right: 10px;
     min-width: 122px;
+    margin-right: 10px;
+    margin-bottom: 0;
     font-size: 16px;
+
     svg {
       font-size: 18px;
     }

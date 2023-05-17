@@ -2,33 +2,31 @@
 @import '../../styles/variables';
 
 .wrapper {
-  background-image: url(../../../public/backgrounds/share_modal_bg.png);
-  padding: 32px 22px;
-  height: 197px;
-  width: 282px;
-
-  display: flex;
-  flex-direction: column;
-
   position: absolute;
-  bottom: 56px;
   right: -30%;
+  bottom: 56px;
   z-index: 10;
   display: none;
+  flex-direction: column;
+  width: 282px;
+  height: 197px;
+  padding: 32px 22px;
+  background-image: url('../../../public/backgrounds/share_modal_bg.png');
 }
 
 .link {
-  color: $text-dark;
   display: flex;
   align-items: center;
+  width: 100%;
+  margin-bottom: 21px;
+  color: $text-dark;
   font-weight: 400;
   font-size: 16px;
   line-height: 19px;
-  margin-bottom: 21px;
-  width: 100%;
+
   svg {
-    font-size: 20px;
     margin-right: 12px;
+    font-size: 20px;
   }
 
   &:hover {

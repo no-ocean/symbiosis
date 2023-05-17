@@ -2,22 +2,22 @@
 @import '../../styles/variables';
 
 .wrapper {
-  background-color: $bg-light;
-  border-radius: 7px;
   display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 58px 1fr 1fr 80px 130px;
   align-items: center;
   padding: 17px 20px;
   font-size: 20px;
   line-height: 23px;
-  grid-template-columns: 58px 1fr 1fr 80px 130px;
-  grid-gap: 20px;
+  background-color: $bg-light;
+  border-radius: 7px;
 }
 
 .mobileCell {
-  align-items: center;
   display: grid;
-  grid-template-columns: 2fr 1fr;
   grid-gap: 20px;
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
 }
 
 .profitImg {
@@ -32,14 +32,15 @@
 
 .coin, .limiter {
   position: relative;
-  margin-left: -14px;
   z-index: 5;
-  height: 36.32px;
-  width: 36.32px;
-  border-radius: 50%;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  width: 36.32px;
+  height: 36.32px;
+  margin-left: -14px;
+  border-radius: 50%;
+
   img {
     height: 100%;
   }
@@ -58,15 +59,15 @@
 }
 
 .limiter {
-  background-color: $red;
   font-size: 16px;
+  background-color: $red;
 }
+
 // sm-breakpoint: 576px;
 // md-breakpoint: 768px;
 // lg-breakpoint: 992px;
 // xl-breakpoint: 1200px;
 // xxl-breakpoint: 1360px;
-@media (max-width: $xxl-breakpoint) {}
 @media (max-width: $xl-breakpoint) {
   .wrapper {
     grid-gap: 14px;
@@ -78,37 +79,43 @@
     flex-wrap: wrap;
     grid-gap: initial;
   }
+
   .position {
-    width: auto;
     order: 0;
+    width: auto;
     margin-right: 10px;
   }
+
   .title {
     order: 1;
     margin-right: auto;
   }
+
   .profit {
     order: 2;
   }
+
   .profitImg {
     width: 36px;
   }
+
   .mobileCell {
     display: flex;
-    order: 3;
     grid-gap: initial;
+    order: 3;
+    width: 100%;
     margin-top: 20px;
     margin-bottom: 20px;
-    width: 100%;
   }
+
   .coins {
-    width: 60%;
     flex-shrink: 0;
+    width: 60%;
   }
 
   .value {
-    width: 40%;
     flex-shrink: 0;
+    width: 40%;
     text-align: right;
   }
 
@@ -127,4 +134,3 @@
     padding: 10px;
   }
 }
-@media (max-width: $sm-breakpoint) {}

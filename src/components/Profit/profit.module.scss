@@ -2,33 +2,32 @@
 @import "../../styles/variables";
 
 .wrapper {
-  background-image: url(../../../public/backgrounds/profit_bg.png);
-  width: 386px;
-  height: 95px;
-
   display: flex;
   align-items: center;
-
-  padding: 12px 26px;
+  width: 386px;
+  height: 95px;
   margin-bottom: 46px;
+  padding: 12px 26px;
+  background-image: url('../../../public/backgrounds/profit_bg.png');
 }
 
 
 .img {
+  flex-shrink: 0;
   width: 63px;
   margin-right: 10px;
-  flex-shrink: 0;
 }
 
 .noNFT {
-  background-image: url(../../../public/backgrounds/no_nft_bg.png);
-  height: 125px;
   align-items: flex-start;
+  height: 125px;
   padding: 18px 26px;
+  background-image: url('../../../public/backgrounds/no_nft_bg.png');
+
   .img {
-    border-radius: 6px;
     overflow: hidden;
-    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.25));
+    border-radius: 6px;
+    filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.25));
   }
 }
 
@@ -43,23 +42,24 @@
 
 .text {
   color: $text-dark;
-  font-size: 18px;
   font-weight: 500;
+  font-size: 18px;
   line-height: 21px;
 }
 
 a.link {
   @include syncopate-font(16px);
-  background-color: rgba(236, 240, 248, 0.19);
-  border-radius: 7px;
-  color: $red-text;
+
   display: flex;
-  padding: 3px 14px;
+  flex-grow: 1;
   align-items: center;
   justify-content: space-between;
   max-width: 245px;
-  flex-grow: 1;
   margin-top: 10px;
+  padding: 3px 14px;
+  color: $red-text;
+  background-color: rgba(236, 240, 248, 0.19);
+  border-radius: 7px;
   transition: all .3s ease;
 
   span {
@@ -67,13 +67,13 @@ a.link {
   }
 
   svg {
-    transition: all .2s ease;
     font-size: 30px;
+    transition: all .2s ease;
   }
 
   &:hover {
-    background-color: rgba(236, 240, 248, 0.4);
     color: lighten($color: $red-text, $amount: .5);
+    background-color: rgba(236, 240, 248, 0.4);
 
     svg {
       transform: translateX(2px);
@@ -97,16 +97,4 @@ a.link {
     background-size: cover;
     border-radius: 8px;
   }
-}
-
-@media (max-width: $lg-max) {
-
-}
-
-@media (max-width: $md-breakpoint) {
-
-}
-
-@media (max-width: $sm-breakpoint) {
-  
 }

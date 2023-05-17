@@ -1,8 +1,8 @@
 @import "../../styles/variables";
 
 .footer {
-  background-color: $header-bg;
   padding: 16px 0;
+  background-color: $header-bg;
 }
 
 .footerRow {
@@ -11,7 +11,11 @@
 }
 
 .socialLink {
+  display: flex;
+  margin: 0 10px;
+  font-size: 24px;
   transition: color .2s ease;
+
   &:hover {
     color: $red;
   }
@@ -25,12 +29,6 @@
 
 .socialItem {
   display: flex;
-}
-
-.socialLink {
-  display: flex;
-  font-size: 24px;
-  margin: 0 10px;
 }
 
 @media (max-width: $lg-max) {

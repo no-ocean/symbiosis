@@ -3,16 +3,17 @@
 
 .backLink {
   display: flex;
+  align-items: center;
+  width: max-content;
+  font-weight: 700;
   font-size: 18px;
   text-transform: uppercase;
-  font-weight: 700;
-  align-items: center;
-  transition: all .2s ease;
   opacity: .7;
-  width: max-content;
+  transition: all .2s ease;
+
   svg {
-    transition: all .2s ease;
     font-size: 34px;
+    transition: all .2s ease;
   }
 
   &:hover {

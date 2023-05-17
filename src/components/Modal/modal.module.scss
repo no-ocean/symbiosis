@@ -2,19 +2,18 @@
 @import '../../styles/variables';
 
 .overlay {
-  background-color: rgba($color: $black, $alpha: 0.5);
-  backdrop-filter: blur(3px);
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 500;
   display: none;
   align-items: flex-start;
   justify-content: center;
-  
-  position: fixed;
-  z-index: 500;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
   overflow-x: auto;
+  background-color: rgba($color: $black, $alpha: 0.5);
+  backdrop-filter: blur(3px);
 }
 
 .active {
@@ -22,27 +21,28 @@
 }
 
 .wrapper {
+  position: relative;
+  width: 390px;
+  margin: 20px auto;
+  padding: 30px;
   background: $main-bg;
   border-radius: 7px;
-  padding: 30px;
-  width: 390px;
-  position: relative;
-  margin: 20px auto;
 }
 
 .close {
-  cursor: pointer;
-  color: $text-light;
-  height: 36px;
-  width: 36px;
-  font-size: 32px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   position: absolute;
   top: -4px;
   right: -50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  color: $text-light;
+  font-size: 32px;
+  cursor: pointer;
   transition: all .2s ease;
+
   &:hover {
     color: $white;
   }
@@ -51,36 +51,37 @@
 .content {
   display: flex;
   flex-direction: column;
-  text-align: center;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
+  text-align: center;
 }
 
 .title {
-  font-size: 20px;
   margin-bottom: 10px;
+  font-size: 20px;
 }
 
 p.description {
+  max-width: 290px;
+  margin-bottom: 40px;
   font-size: 16px;
   line-height: 19px;
-  margin-bottom: 40px;
-  max-width: 290px;
 }
 
 .walletItem {
-  background-color: $bg-light;
-  border-radius: 5px;
   display: flex;
-  justify-content: space-between;
+  flex-grow: 1;
   align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 13px 22px 12px;
   font-size: 20px;
   line-height: 23px;
-  padding: 13px 22px 12px;
-  margin-bottom: 15px;
-  flex-grow: 1;
-  width: 100%;
+  background-color: $bg-light;
+  border-radius: 5px;
   transition: all .2s ease;
+
   &:hover {
     color: $white;
   }
@@ -93,6 +94,7 @@ p.description {
   padding-right: 10px;
   text-align: left;
 }
+
 .walletTitle {
   font-size: 20px;
   @include text-ellipsis;
@@ -115,8 +117,10 @@ p.description {
 .buttons {
   display: flex;
   flex-direction: column;
+
   button, a {
     margin-bottom: 20px;
+
     &:last-of-type {
       margin-bottom: 0;
     }
@@ -137,21 +141,20 @@ p.description {
   margin-top: 30px;
   margin-bottom: 54px;
 }
+
 // sm-breakpoint: 576px;
 // md-breakpoint: 768px;
 // lg-max: 960px;
 // lg-breakpoint: 992px;
 // xl-breakpoint: 1200px;
 // xxl-breakpoint: 1360px;
-@media (max-width: $xxl-breakpoint) {}
-@media (max-width: $xl-breakpoint) {}
-@media (max-width: $lg-max) {}
-@media (max-width: $md-breakpoint) {}
+
 @media (max-width: $sm-breakpoint) {
   .wrapper {
     width: 300px;
     padding: 5px 10px 30px;
   }
+
   .close {
     position: static;
     margin-left: auto;

@@ -2,24 +2,25 @@
 @import "../../styles/variables";
 
 .button {
-  color: $white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 280px;
-  flex-shrink: 0;
-  background-size: contain;
   position: relative;
-  padding-left: 12px;
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 280px;
   padding-right: 12px;
+  padding-left: 12px;
+  color: $white;
+  background-size: contain;
   @include text-ellipsis;
   @include button-hover-animation;
 
   &[disabled] {
     cursor: not-allowed;
     opacity: .4;
+
     &:hover {
-      &:before {
+      &::before {
         animation: none;
       }
     }
@@ -31,49 +32,49 @@
 }
 
 .largeRed {
-  background-image: url(../../../public/buttons/btn_lg_fill_red.svg);
   width: 280px;
   height: 48px;
+  background-image: url('../../../public/buttons/btn_lg_fill_red.svg');
   @include syncopate-font(16px);
 }
 
 .largeGray {
-  background-image: url(../../../public/buttons/btn_lg_gray.svg);
   width: 280px;
   height: 48px;
+  background-image: url('../../../public/buttons/btn_lg_gray.svg');
   @include syncopate-font(16px);
 }
 
 .largeBorderRed {
-  background-image: url(../../../public/buttons/btn_lg_transparent_red.svg);
   width: 280px;
   height: 48px;
+  background-image: url('../../../public/buttons/btn_lg_transparent_red.svg');
   @include syncopate-font(16px);
 }
 
 .shortRed {
-  background-image: url(../../../public/buttons/btn_short_fill_red.svg);
   width: 178px;
   height: 48px;
+  background-image: url('../../../public/buttons/btn_short_fill_red.svg');
   @include syncopate-font(16px);
 }
 
 .smallBorderRed{
-  background-image: url(../../../public/buttons/btn_sm_transparent_red.svg);
   width: 208px;
   height: 40px;
+  background-image: url('../../../public/buttons/btn_sm_transparent_red.svg');
   @include syncopate-font(12px);
 }
 
 .smallBorderWhite{
-  background-image: url(../../../public/buttons/btn_sm_transparent_white.svg);
   width: 208px;
   height: 40px;
+  background-image: url('../../../public/buttons/btn_sm_transparent_white.svg');
   @include syncopate-font(12px);
 }
 
 
-@keyframes opacityIn {
+@keyframes opacity-in {
   0% {
     left: 0;
     width: 0;
@@ -81,24 +82,24 @@
   }
 
   15% {
-    opacity: 0.2;
     width: 10px;
+    opacity: 0.2;
   }
 
   30% {
-    opacity: .5;
     width: 20px;
+    opacity: .5;
   }
 
   70% {
-    opacity: 0.1;
     width: 5px;
+    opacity: 0.1;
   }
 
   100% {
     left: 100%;
-    opacity: 0;
     width: 0;
+    opacity: 0;
   }
 }
 

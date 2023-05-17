@@ -2,20 +2,20 @@
 @import '../../styles/variables';
 
 .btn {
-  background: $text-dark;
-  border-radius: 5px;
   display: flex;
-  color: $text-light;
   align-items: center;
   justify-content: center;
+  width: 130px;
+  padding: 8px;
+  color: $text-light;
   font-size: 14px;
   line-height: 16px;
-  padding: 8px;
-  width: 130px;
+  background: $text-dark;
+  border-radius: 5px;
 
   svg {
-    font-size: 20px;
     margin-right: 4px;
+    font-size: 20px;
   }
 
   &:hover {

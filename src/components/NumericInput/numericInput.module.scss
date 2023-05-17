@@ -2,34 +2,35 @@
 @import "../../styles/variables";
 
 .wrapper {
-  background-color: $main-bg;
-  border-radius: 5px;
   display: flex;
   align-items: center;
+  width: 100%;
   height: 36px;
   padding: 3px;
-  width: 100%;
+  background-color: $main-bg;
+  border-radius: 5px;
 }
 
 .decrement,
 .increment {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  padding: 0;
+  color: $border-color;
+  font-size: 28px;
   background-color: transparent;
   border-radius: 5px;
-  display: flex;
-  color: $border-color;
-  justify-content: center;
-  align-items: center;
-  height: 30px;
-  width: 30px;
-  flex-shrink: 0;
-  padding: 0;
-  transition: all .2s ease;
-  font-size: 28px;
   outline: none;
   opacity: 1;
+  transition: all .2s ease;
+
   &:hover {
-    background-color: $bg-light;
     color: $text-light;
+    background-color: $bg-light;
   }
 }
 
@@ -43,14 +44,14 @@
 
 .input {
   display: flex;
-  color: $text-light;
+  flex-grow: 1;
   align-items: center;
   justify-content: center;
-  text-align: center;
-  flex-grow: 1;
-  font-weight: 400;
-  font-size: 16px;
   width: 100%;
   min-width: 50px;
   margin: 0 11px;
+  color: $text-light;
+  font-weight: 400;
+  font-size: 16px;
+  text-align: center;
 }

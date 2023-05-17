@@ -2,44 +2,44 @@
 @import "../../styles/variables";
 
 .wrapper {
-  background-color: $bg-light;
-  padding: 22px 30px 26px;
-  max-width: 386px;
-  margin-bottom: 60px;
   position: relative;
   z-index: 5;
+  max-width: 386px;
+  margin-bottom: 60px;
+  padding: 22px 30px 26px;
+  background-color: $bg-light;
 
-  &:before {
-    content: '';
-    background-image: url(../../../public/backgrounds/description_parts/top.png);
-    background-position: 0 0;
+  &::before {
     position: absolute;
     top: -14px;
-    left: -6px;
-    bottom: 0;
     right: 0;
+    bottom: 0;
+    left: -6px;
     z-index: -1;
     margin-bottom: 46px;
+    background-image: url('../../../public/backgrounds/description_parts/top.png');
+    background-position: 0 0;
+    content: '';
   }
 
-  &:after {
-    content: '';
-    background-image: url(../../../public/backgrounds/description_parts/bottom.png);
-    background-position: 0 100%;
+  &::after {
     position: absolute;
     top: 0;
-    left: 0;
-    bottom: -28px;
     right: 0;
+    bottom: -28px;
+    left: 0;
     z-index: -1;
+    background-image: url('../../../public/backgrounds/description_parts/bottom.png');
+    background-position: 0 100%;
+    content: '';
   }
 
   h5 {
+    margin-top: 0;
+    margin-bottom: 25px;
     color: $text-gray-light;
     font-size: 18px;
     line-height: 19px;
-    margin-top: 0;
-    margin-bottom: 25px;
   }
 
   &:last-of-type {
@@ -49,10 +49,11 @@
 
 @media (max-width: 1200px) {
   .wrapper {
-    max-width: 100%;
     width: 100%;
-    &:before,
-    &:after {
+    max-width: 100%;
+
+    &::before,
+    &::after {
       background-size: contain;
     }
   }

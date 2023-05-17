@@ -4,19 +4,19 @@
 .wrapper {
   padding-top: 60px;
   padding-bottom: 180px;
-  background-image: url(../../../public/backgrounds/battle_stages_dark_bg.png);
+  background-image: url('../../../public/backgrounds/battle_stages_dark_bg.png');
   background-position: 50% 54px;
 }
 
 .line {
-  background-image: url(../../../public/backgrounds/battle_stages_dark_bg_before.png);
+  background-image: url('../../../public/backgrounds/battle_stages_dark_bg_before.png');
   background-position: 0 90px;
 }
 
 .title {
-  padding-left: 112px;
   margin-top: 0;
   margin-bottom: 60px;
+  padding-left: 112px;
 }
 
 .main {
@@ -26,29 +26,32 @@
 
 .item {
   display: flex;
-  margin-bottom: 126px;
   max-width: 956px;
+  margin-bottom: 126px;
+
   &:nth-child(2) {
     margin-bottom: 148px;
   }
+
   &:nth-child(3) {
     margin-bottom: 148px;
   }
+
   &:nth-child(4) {
     margin-bottom: 88px;
   }
 }
 
 .num {
+  flex-shrink: 0;
   width: 54.5px;
   margin-right: 40px;
-  flex-shrink: 0;
 }
 
 .content {
+  flex-grow: 1;
   font-size: 16px;
   line-height: 19px;
-  flex-grow: 1;
 }
 
 .itemTitle {
@@ -65,23 +68,25 @@
   display: flex;
   flex-direction: column;
   line-height: 19px;
+
   &:last-child {
     max-width: 414px;
   }
 }
 
 .list {
-  padding-left: 0;
   margin-left: 0;
+  padding-left: 0;
   list-style: outside;
 }
 
 .buttons {
   display: flex;
   padding-left: 94px;
+
   button {
-    margin-bottom: 12px;
     margin-right: 32px;
+    margin-bottom: 12px;
   }
 }
 
@@ -126,12 +131,15 @@
 
   .item {
     margin-bottom: 50px;
+
     &:nth-child(2) {
       margin-bottom: 50px;
     }
+
     &:nth-child(3) {
       margin-bottom: 50px;
     }
+
     &:nth-child(4) {
       margin-bottom: 50px;
     }
@@ -139,13 +147,13 @@
 }
 
 @media (max-width: $md-breakpoint) {
-
   .title {
     padding-left: 0;
   }
 
   .column {
     margin-bottom: 30px;
+
     &:last-child {
       max-width: 100%;
       margin-bottom: 0;
@@ -161,18 +169,18 @@
   }
 
   .buttons {
-    padding-left: 0;
-    justify-content: space-around;
     flex-wrap: wrap;
+    justify-content: space-around;
+    padding-left: 0;
+
     button {
-      margin-bottom: 20px;
       margin-right: 0;
+      margin-bottom: 20px;
     }
   }
 }
 
 @media (max-width: $sm-breakpoint) {
-
   .title {
     padding-left: 0;
   }

@@ -2,10 +2,10 @@
 @import "../../styles/variables";
 
 .wrapper {
+  position: relative;
   display: flex;
   flex-direction: column;
   margin-top: 40px;
-  position: relative;
 
   // uncomment if you need scroll here
 

@@ -2,10 +2,10 @@
 @import "../../styles/variables";
 
 .topSection {
-  background-image: url(../../../public/backgrounds/top_section_dark_bg.png);
-  background-position: 50% 44px;
   padding-top: 60px;
   padding-bottom: 208px;
+  background-image: url('../../../public/backgrounds/top_section_dark_bg.png');
+  background-position: 50% 44px;
 }
 
 .inner {
@@ -26,8 +26,8 @@
 }
 
 .right {
-  width: 527px;
   flex-shrink: 0;
+  width: 527px;
   padding-right: 15px;
 }
 
@@ -40,14 +40,15 @@
 .item {
   display: flex;
   flex-direction: column;
-  margin-right: auto;
   max-width: 200px;
+  margin-right: auto;
   margin-bottom: 20px;
 }
 
 .itemImg {
   height: 42px;
   margin-bottom: 20px;
+
   img {
     height: 100%;
   }
@@ -55,8 +56,9 @@
 
 .itemValue {
   @include syncopate-font(30px);
-  line-height: 31px;
+
   margin-bottom: 10px;
+  line-height: 31px;
   white-space: nowrap;
 }
 
@@ -77,8 +79,8 @@
   .item {
     flex-grow: 1;
     max-width: 180px;
-    padding-right: 20px;
     margin-bottom: 30px;
+    padding-right: 20px;
   }
 }
 
@@ -149,11 +151,11 @@
   }
 
   .item {
-    text-align: left;
     align-items: flex-start;
-    margin: 0;
-    padding-right: 10px;
-    margin-bottom: 30px;
     max-width: 120px;
+    margin: 0;
+    margin-bottom: 30px;
+    padding-right: 10px;
+    text-align: left;
   }
 }

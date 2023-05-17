@@ -29,12 +29,12 @@
 
 .container-fluid {
   box-sizing: border-box;
-  padding-right: $half-gutter-width;
-  padding-left: $half-gutter-width;
+  width: 100%;
   max-width: $xl-max;
   margin-right: auto;
   margin-left: auto;
-  width: 100%;
+  padding-right: $half-gutter-width;
+  padding-left: $half-gutter-width;
 }
 
 @media only screen and (min-width: $sm-breakpoint) {

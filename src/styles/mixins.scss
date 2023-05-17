@@ -5,30 +5,30 @@
 }
 
 @mixin text-ellipsis {
-  text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+  text-overflow: ellipsis;
 }
 
 @mixin button-hover-animation {
-  &:before {
-    background: $white;
-    content: "";
-    height: 180px;
-    left: 0;
-    opacity: .2;
+  &::before {
     position: absolute;
     top: 50%;
+    left: 0;
+    height: 180px;
+    background: $white;
     transform: translateY(-50%) rotate(45deg);
+    opacity: .2;
+    content: "";
   }
 
   &:hover {
-    &:before {
-      animation-iteration-count: 1;
+    &::before {
+      animation: opacity-in 550ms;
       animation-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
-      animation: opacityIn 550ms;
-      animation-fill-mode: forwards;
+      animation-iteration-count: 1;
       animation-direction: alternate;
+      animation-fill-mode: forwards;
     }
   }
 }

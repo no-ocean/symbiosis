@@ -6,58 +6,62 @@
 }
 
 .container {
-  background-image: url(../../../public/backgrounds/be_on_step_bg_dark.png);
-  background-position: 100% 100%;
+  position: relative;
   max-width: 1434px;
   margin: 0 auto;
-  position: relative;
+  background-image: url('../../../public/backgrounds/be_on_step_bg_dark.png');
+  background-position: 100% 100%;
 }
 
 .img {
   position: absolute;
-  max-width: 590px;
   top: -150px;
   left: 0;
   z-index: 10;
+  max-width: 590px;
+
   img {
     opacity: 0;
   }
-  &:before {
-    content: '';
-    background-image: url(../../../public/images/be_on_step_img_full@2x.png);
-    background-size: contain;
+
+  &::before {
     position: absolute;
-    right: 0;
     top: 0;
+    right: 0;
     display: flex;
     width: 972px;
     height: 798.02px;
+    background-image: url('../../../public/images/be_on_step_img_full@2x.png');
+    background-size: contain;
+    content: '';
   }
 }
 
 .content {
-  background-image: url(../../../public/backgrounds/be_on_step_bg.png);                
-  background-position: 100% 65px;
-  padding: 152px 0 120px 634px;
-  max-width: 1304px;
   position: relative;
-  &:before {
-    content: '';
-    background-image: url(../../../public/backgrounds/be_on_step_before.png);
+  max-width: 1304px;
+  padding: 152px 0 120px 634px;
+  background-image: url('../../../public/backgrounds/be_on_step_bg.png');                
+  background-position: 100% 65px;
+
+  &::before {
     position: absolute;
-    width: 142px;
-    height: 23px;
     top: 68px;
     right: 14%;
-  }
-  &:after {
+    width: 142px;
+    height: 23px;
+    background-image: url('../../../public/backgrounds/be_on_step_before.png');
     content: '';
-    background-image: url(../../../public/backgrounds/be_on_step_after.png);
+  }
+
+  &::after {
     position: absolute;
-    width: 7px;
-    height: 169px;
     top: 312px;
     right: -4px;
+    width: 7px;
+    height: 169px;
+    background-image: url('../../../public/backgrounds/be_on_step_after.png');
+    content: '';
   }
 }
 
@@ -66,16 +70,16 @@
 }
 
 .title {
-  line-height: 42px;
   margin-top: 0;
   margin-bottom: 10px;
+  line-height: 42px;
 }
 
 .desc {
+  margin-bottom: 0;
   font-weight: 500;
   font-size: 18px;
   line-height: 21px;
-  margin-bottom: 0;
 }
 
 .items {
@@ -86,15 +90,15 @@
 .item {
   display: flex;
   flex-direction: column;
-  margin-right: auto;
   max-width: 270px;
-  margin-bottom: 20px;
   margin-right: 52px;
+  margin-bottom: 20px;
 }
 
 .icon {
   height: 42px;
   margin-bottom: 10px;
+
   img {
     height: 100%;
   }
@@ -106,9 +110,9 @@
 }
 
 .buttons {
-  padding-top: 60px;
   display: flex;
   align-items: center;
+  padding-top: 60px;
 }
 
 .button {
@@ -123,31 +127,37 @@
 // xxl-breakpoint: 1360px;
 @media (max-width: $xxl-breakpoint) {
   .content {
-    padding-top: 132px;
-    padding-left: 45%;
     margin-right: 60px;
+    padding-top: 132px;
     padding-right: 80px;
+    padding-left: 45%;
    
   }
+
   .img {
-    width: 42%;
     top: calc(50% - 50px);
+    width: 42%;
     transform: translateY(-50%);
+
     img {
       opacity: 1;
     }
-    &:before {
+
+    &::before {
       display: none;
     }
   }
+
   .items {
     padding-top: 10%;
   }
+
   .buttons {
     flex-direction: column;
-    padding-top: 5%;
     align-items: flex-start;
+    padding-top: 5%;
   }
+
   .button {
     margin-right: 0;
     margin-bottom: 16px;
@@ -166,23 +176,27 @@
     flex-direction: row;
     align-items: center;
   }
+
   .img {
     position: static;
     width: 50%;
     margin: 0;
     margin-top: 30px;
-    transform: none;
     overflow: hidden;
+    transform: none;
+
     img {
       margin-top: -20%;
     }
   }
+
   .content {
+    width: 50%;
+    max-width: 100%;
+    margin: 0;
     padding: 0 20px;
     background: none;
-    max-width: 100%;
-    width: 50%;
-    margin: 0;
+
     &::before,
     &::after {
       display: none;
@@ -210,12 +224,14 @@
     flex-direction: column;
     margin-bottom: 40px;
   }
+
   .item {
-    max-width: 100%;
     width: 100%;
-    margin-bottom: 20px;
+    max-width: 100%;
     margin-right: 0;
+    margin-bottom: 20px;
   }
+
   .buttons {
     padding-top: 0;
   }

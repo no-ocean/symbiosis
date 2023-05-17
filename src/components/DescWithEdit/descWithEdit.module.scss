@@ -2,28 +2,29 @@
 @import "../../styles/variables";
 
 .value {
+  margin-bottom: 5px;
   font-weight: 600;
   font-size: 20px;
   line-height: 23px;
   text-transform: uppercase;
-  margin-bottom: 5px;
   @include text-ellipsis;
 }
 
 .description {
+  margin-bottom: 34px;
   font-weight: 400;
   font-size: 16px;  
   line-height: 19px;
-  margin-bottom: 34px;
 }
 
 .btn {
-  cursor: pointer;
+  padding: 0;
   color: $text-gray;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
-  padding: 0;
+  cursor: pointer;
+
   &:first-child {
     margin-right: 30px;
   }

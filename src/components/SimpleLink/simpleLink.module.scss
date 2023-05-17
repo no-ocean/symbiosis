@@ -2,13 +2,14 @@
 @import '../../styles/variables';
 
 a.wrapper {
-  color: $red-light;
+  position: relative;
   display: flex;
   align-items: center;
-  line-height: 19px;
-  position: relative;
   max-width: max-content;
   margin-bottom: 6px;
+  color: $red-light;
+  line-height: 19px;
+
   &:hover {
     .label {
       &::before {
@@ -16,6 +17,7 @@ a.wrapper {
       }
     }
   }
+
   &:last-child {
     margin-bottom: 0;
   }
@@ -25,20 +27,21 @@ a.wrapper {
   position: relative;
   padding-top: 6px;
   padding-bottom: 6px;
+
   &::before {
-    content: '';
-    background-color: $red-light;
     position: absolute;
     bottom: 0;
     left: 50%;
     width: 0;
     height: 1px;
-    transition: all .5s ease;
+    background-color: $red-light;
     transform: translateX(-50%);
+    transition: all .5s ease;
+    content: '';
   }
 }
 
 .icon {
-  font-size: 24px;
   margin-right: 6px;
+  font-size: 24px;
 }
