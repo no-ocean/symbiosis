@@ -1,8 +1,11 @@
 {
   "files": {
-    "main.css": "/symbiosis/static/css/main.b06f6f2b.css",
-    "main.js": "/symbiosis/static/js/main.18378119.js",
+    "main.css": "/symbiosis/static/css/main.a36b6d74.css",
+    "main.js": "/symbiosis/static/js/main.c9fa806d.js",
+    "static/media/be_on_step_img_full@2x.png": "/symbiosis/static/media/be_on_step_img_full@2x.9a8d5fc537baafe79723.png",
     "static/media/battle_image_section@2x.png": "/symbiosis/static/media/battle_image_section@2x.63cfc5ffa790683d87ec.png",
+    "static/media/about_partners_img_full@2x.png": "/symbiosis/static/media/about_partners_img_full@2x.a664edcc1a93b8a54dc8.png",
+    "static/media/no_nft_bg.png": "/symbiosis/static/media/no_nft_bg.16df3c8130ec5239aece.png",
     "static/media/profit_bg.png": "/symbiosis/static/media/profit_bg.b1e3c473240309915041.png",
     "static/media/battle_stages_dark_bg.png": "/symbiosis/static/media/battle_stages_dark_bg.d9c10ddb697cdd0db199.png",
     "static/media/about_the_partner_bg.png": "/symbiosis/static/media/about_the_partner_bg.05a7941770935a5044a5.png",
@@ -17,11 +20,11 @@
     "static/media/btn_sm_transparent_white.svg": "/symbiosis/static/media/btn_sm_transparent_white.82d9c237b80ab9b83048.svg",
     "static/media/btn_lg_fill_red.svg": "/symbiosis/static/media/btn_lg_fill_red.bb46cc7c5d6638de3bf4.svg",
     "static/media/btn_lg_gray.svg": "/symbiosis/static/media/btn_lg_gray.a5764bbf07a1784268c1.svg",
-    "main.b06f6f2b.css.map": "/symbiosis/static/css/main.b06f6f2b.css.map",
-    "main.18378119.js.map": "/symbiosis/static/js/main.18378119.js.map"
+    "main.a36b6d74.css.map": "/symbiosis/static/css/main.a36b6d74.css.map",
+    "main.c9fa806d.js.map": "/symbiosis/static/js/main.c9fa806d.js.map"
   },
   "entrypoints": [
-    "static/css/main.b06f6f2b.css",
-    "static/js/main.18378119.js"
+    "static/css/main.a36b6d74.css",
+    "static/js/main.c9fa806d.js"
   ]
 }
