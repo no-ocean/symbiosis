@@ -23,7 +23,7 @@ const CoinsListItem = ({ id, data }) => {
             onMouseEnter={() => setModal(true)}
             onMouseLeave={() => setModal(false)}
           >
-            USDT
+            {title}
           </div>
           <div className={styles.val}>${value}</div>
         </label>
