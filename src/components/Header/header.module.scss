@@ -3,6 +3,9 @@
 .header {
   padding: 16px 0;
   background-color: $header-bg;
+  position: sticky;
+  top: 0;
+  z-index: 25;
 }
 
 .headerRow {
